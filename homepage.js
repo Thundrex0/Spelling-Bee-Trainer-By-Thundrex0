@@ -38,7 +38,7 @@ function register() {
   message.className = "message success";
 
   setTimeout(() => {
-    window.location.href = "../Dashboard/index.html";
+    window.location.href = "../Dashboard/";
   }, 1000);
 }
 
