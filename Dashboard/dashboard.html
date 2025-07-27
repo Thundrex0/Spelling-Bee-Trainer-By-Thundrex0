@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Spelling Bee Trainer</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <header class="dashboard-header">
+    <h1>Welcome, <span id="user-name">User</span>!</h1>
+    <button id="logout-btn">Logout</button>
+  </header>
+
+  <main class="dashboard-main">
+    <h2>Select a Game Mode</h2>
+
+    <div class="mode-buttons">
+      <button onclick="goToMode('Random Mode')">🎲 Random Mode</button>
+      <button onclick="goToMode('Section Mode')">🔠 Section A–Z</button>
+      <button onclick="goToMode('Review Mistakes')">♻️ Review Mistakes</button>
+      <button onclick="goToMode('Streak Mode')">🔥 Streak Mode</button>
+    </div>
+
+    <h2>Leaderboards</h2>
+    <div class="leaderboard-buttons">
+      <button onclick="goToLeaderboard('random')">🏆 Random</button>
+      <button onclick="goToLeaderboard('section')">🏆 Section</button>
+      <button onclick="goToLeaderboard('review')">🏆 Review</button>
+      <button onclick="goToLeaderboard('streak')">🏆 Streak</button>
+    </div>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

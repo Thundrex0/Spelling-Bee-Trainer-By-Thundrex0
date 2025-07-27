@@ -1,0 +1,111 @@
+/* ==== GLOBAL STYLES ==== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f7fa;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* ==== CONTAINER ==== */
+.container {
+  background-color: white;
+  border: 2px solid #1e293b; /* dark blue-black */
+  border-radius: 12px;
+  padding: 40px;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* ==== HEADER ==== */
+.app-title {
+  font-size: 26px;
+  color: #1e3a8a; /* blue */
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #64748b; /* gray-blue */
+  margin-bottom: 25px;
+}
+
+/* ==== FORM SECTION ==== */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 14px;
+  color: #1f2937; /* dark text */
+  text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6; /* blue border on focus */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* ==== BUTTONS ==== */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+button:first-child {
+  background-color: #fbbf24; /* gold */
+  color: #1a1a1a;
+}
+
+button:last-child {
+  background-color: #1d4ed8; /* blue */
+  color: white;
+}
+
+/* ==== MESSAGE ==== */
+.message {
+  margin-top: 15px;
+  font-size: 14px;
+  min-height: 20px;
+}
+
+.message.success {
+  color: #10b981; /* green */
+}
+
+.message.error {
+  color: #ef4444; /* red */
+}

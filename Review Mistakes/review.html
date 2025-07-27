@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Review Mistakes | Spelling Bee Trainer</title>
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
+
+  <header class="review-header">
+    <h1>♻️ Review Mistakes</h1>
+    <button id="logout-btn" title="Logout">🚪</button>
+  </header>
+
+  <main class="review-main">
+
+    <section class="word-box">
+      <button id="play-sound" title="Hear word">🔊</button>
+      <h2 id="word-heading">Your Mistakes Will Appear Here</h2>
+    </section>
+
+    <section class="info-box">
+      <h3>Meaning</h3>
+      <p id="word-meaning">---</p>
+
+      <h3>Part of Speech</h3>
+      <p id="word-pos">---</p>
+    </section>
+
+    <section class="input-box">
+      <input type="text" id="user-input" placeholder="Type the correct word" autocomplete="off">
+      <div class="action-buttons">
+        <button id="check-btn">✔️ Check</button>
+        <button id="next-btn">➡️ Next</button>
+        <button id="show-answer-btn">❔ Show Answer</button>
+        <button id="retry-btn">🔁 Retry</button>
+        <button id="remove-btn">🗑️ Remove Word</button>
+      </div>
+    </section>
+
+    <section class="feedback-box">
+      <p id="feedback-text"></p>
+    </section>
+
+  </main>
+
+  <script src="../WordList.js"></script>
+  <script src="review.js"></script>
+
+</body>
+</html>

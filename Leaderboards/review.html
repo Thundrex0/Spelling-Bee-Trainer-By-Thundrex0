@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Review Mode Leaderboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9fafb;
+      color: #111827;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .leaderboard-header {
+      width: 100%;
+      background-color: #1e293b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .leaderboard-header h1 {
+      font-size: 26px;
+      margin: 0;
+    }
+
+    #back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: transparent;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    #back-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .leaderboard-main {
+      width: 100%;
+      max-width: 800px;
+      padding: 40px 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    thead {
+      background-color: #1d4ed8;
+      color: white;
+    }
+
+    th, td {
+      padding: 16px;
+      text-align: center;
+      font-size: 16px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #f1f5f9;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    tbody tr:first-child td {
+      background-color: #ffd70033;
+      font-weight: bold;
+    }
+
+    tbody tr:nth-child(2) td {
+      background-color: #d1d5db;
+      font-weight: bold;
+    }
+
+    tbody tr:nth-child(3) td {
+      background-color: #eab30833;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="leaderboard-header">
+    <h1>♻️ Review Mode Leaderboard</h1>
+    <a href="../Dashboard/index.html" id="back-btn">🔙 Back to Dashboard</a>
+  </header>
+
+  <main class="leaderboard-main">
+    <table id="leaderboard-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Username</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboard-body">
+        <!-- Will be populated by JS -->
+      </tbody>
+    </table>
+  </main>
+
+  <script>
+    const tbody = document.getElementById("leaderboard-body");
+    const users = JSON.parse(localStorage.getItem("users")) || {};
+
+    const sortedUsers = Object.entries(users)
+      .map(([username, data]) => ({
+        username,
+        score: data.scores?.review || 0
+      }))
+      .sort((a, b) => b.score - a.score);
+
+    sortedUsers.forEach((user, index) => {
+      const row = document.createElement("tr");
+
+      const rank = document.createElement("td");
+      rank.textContent = index + 1;
+
+      const name = document.createElement("td");
+      name.textContent = user.username;
+
+      const score = document.createElement("td");
+      score.textContent = user.score;
+
+      row.appendChild(rank);
+      row.appendChild(name);
+      row.appendChild(score);
+
+      tbody.appendChild(row);
+    });
+  </script>
+
+</body>
+</html>
