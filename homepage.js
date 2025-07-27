@@ -38,7 +38,7 @@ function register() {
   message.className = "message success";
 
   setTimeout(() => {
-    window.location.href = "../Dashboard/";
+    window.location.href =  "https://thundrex0.github.io/Spelling-Bee-Trainer-By-Thundrex0/Dashboard/";
   }, 1000);
 }
 
@@ -68,6 +68,6 @@ function login() {
   message.className = "message success";
 
   setTimeout(() => {
-    window.location.href = "../Dashboard/";
+    window.location.href =  "https://thundrex0.github.io/Spelling-Bee-Trainer-By-Thundrex0/Dashboard/";
   }, 1000);
 }
