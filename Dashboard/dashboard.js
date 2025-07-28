@@ -1,59 +1,54 @@
-// ✅ Dynamically insert the username
-const storedUsername = localStorage.getItem("username") || "User";
-document.getElementById("username").textContent = storedUsername;
+// ✅ Load username from localStorage
+const username = localStorage.getItem("username") || "User";
+document.getElementById("username").textContent = username;
 
-// ✅ Fallbacks to avoid null stats
+// ✅ Profile dropdown stats setup
+const profileIcon = document.querySelector(".profile-icon");
+const dropdownStats = document.getElementById("profile-dropdown");
+
+// Get real values from localStorage or fallback
 const streak = localStorage.getItem("streak") || "0";
 const accuracy = localStorage.getItem("accuracy") || "0%";
 const timePlayed = localStorage.getItem("timePlayed") || "0h";
 
-// ✅ Profile Dropdown Data Injection
-const dropdownStats = document.getElementById("dropdown-stats");
-if (dropdownStats) {
-  dropdownStats.innerHTML = `
-    <p><strong>${storedUsername}</strong></p>
-    <hr>
-    <p>🔥 Streak: ${streak}</p>
-    <p>🎯 Accuracy: ${accuracy}</p>
-    <p>⏱️ Time Played: ${timePlayed}</p>
-  `;
-}
+// Inject real stats into dropdown
+dropdownStats.innerHTML = `
+  <p><strong>${username}</strong></p>
+  <hr>
+  <p>🔥 Streak: ${streak}</p>
+  <p>🎯 Accuracy: ${accuracy}</p>
+  <p>⏱️ Time Played: ${timePlayed}</p>
+`;
 
-// ✅ Dropdown toggle
-const profileIcon = document.querySelector(".profile-icon");
-if (profileIcon) {
-  profileIcon.addEventListener("click", () => {
-    dropdownStats.classList.toggle("show");
-  });
-}
-
-// ✅ Logout function
-function logout() {
-  localStorage.removeItem("currentUser");
-  window.location.href = "../index.html";
-}
-
-// ✅ Redirection handler
-function goTo(modeName) {
-  const modeButtons = {
-    "Random Mode": "../Random Mode/index.html",
-    "Section Mode": "../Section Mode/index.html",
-    "Review Mistakes": "../Review Mistakes/index.html",
-    "Streak Mode": "../Streak Mode/index.html",
-    "leaderboards/random": "../Leaderboards/random.html",
-    "leaderboards/section": "../Leaderboards/section.html",
-    "leaderboards/review": "../Leaderboards/review.html",
-    "leaderboards/streak": "../Leaderboards/streak.html"
-  };
-
-  const url = modeButtons[modeName];
-  if (url) {
-    window.location.href = url;
-  } else {
-    console.error("No matching URL found for:", modeName);
-  }
-}
-document.querySelector('.profile-section').addEventListener('click', () => {
-  document.getElementById("profile-dropdown").classList.toggle("show");
+// ✅ Toggle dropdown on click
+profileIcon.addEventListener("click", () => {
+  dropdownStats.classList.toggle("show");
 });
-// ✅ Event listener for the profile section
+
+// ✅ Button redirects
+const modeRedirects = {
+  "Random Mode": "../Random Mode/index.html",
+  "Section Mode": "../Section Mode/index.html",
+  "Review Mistakes": "../Review Mistakes/index.html",
+  "Streak Mode": "../Streak Mode/index.html",
+  "leaderboards/random": "../Leaderboards/random.html",
+  "leaderboards/section": "../Leaderboards/section.html",
+  "leaderboards/review": "../Leaderboards/review.html",
+  "leaderboards/streak": "../Leaderboards/streak.html",
+};
+
+// ✅ Listen to all buttons with data-mode
+document.querySelectorAll(".dashboard-btn").forEach((button) => {
+  const targetMode = button.getAttribute("data-mode");
+  if (targetMode && modeRedirects[targetMode]) {
+    button.addEventListener("click", () => {
+      window.location.href = modeRedirects[targetMode];
+    });
+  }
+});
+
+// ✅ Logout button clears session
+document.querySelector(".logout-btn").addEventListener("click", () => {
+  localStorage.removeItem("username");
+  window.location.href = "../index.html";
+});
