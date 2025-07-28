@@ -1,116 +1,230 @@
-/* Redesigned Modern Dashboard CSS with Sidebar and User Panel */
+/* Modern Spelling Bee Trainer Dashboard CSS */
+:root {
+  --primary-blue: #2563eb;
+  --dark-blue: #1e40af;
+  --light-blue: #93c5fd;
+  --black: #1f2937;
+  --dark-black: #111827;
+  --white: #f9fafb;
+  --off-white: #e5e7eb;
+  --yellow: #f59e0b;
+  --dark-yellow: #d97706;
+}
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #f0f0f0;
-  display: flex;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--white);
+  color: var(--black);
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 280px 1fr;
 }
 
+/* Sidebar Styles */
 .sidebar {
-  width: 280px;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding-top: 2rem;
+  background-color: var(--dark-black);
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.sidebar .dashboard-card {
-  background-color: #ffffff10;
-  padding: 1.5rem 2rem;
-  border-radius: 12px;
-  margin: 0 1rem;
-  text-align: left;
-  position: relative;
-  overflow: hidden;
-  transition: background 0.3s ease;
+.dashboard-header {
+  padding: 0 1.5rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.sidebar .dashboard-card:hover {
-  background-color: #ffffff15;
-}
-
-.sidebar .dashboard-card a {
-  color: #fff;
+.dashboard-header h1 {
+  color: var(--white);
   font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  position: relative;
-  z-index: 2;
+  margin: 0 0 0.25rem;
 }
 
-.sidebar .dashboard-card::before {
-  content: attr(data-emoji);
-  font-size: 5rem;
-  position: absolute;
-  right: 10px;
-  bottom: -10px;
-  opacity: 0.1;
-  z-index: 1;
+.dashboard-header p {
+  color: var(--light-blue);
+  font-size: 0.875rem;
+  margin: 0;
 }
 
-.main-content {
-  flex: 1;
-  padding: 2rem;
+/* Navigation Styles */
+.nav-section {
+  padding: 1.5rem 0;
+}
+
+.nav-section h2 {
+  color: var(--light-blue);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.mode-buttons, .leaderboard-buttons {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  position: relative;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.mode-buttons button, .leaderboard-buttons button {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mode-buttons button:hover, .leaderboard-buttons button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+.mode-buttons button:active, .leaderboard-buttons button:active {
+  transform: translateX(4px) scale(0.98);
+}
+
+/* Main Content Styles */
+.dashboard-main {
+  padding: 2rem;
+  background-color: var(--white);
 }
 
 .user-panel {
-  position: absolute;
-  top: 1.5rem;
-  right: 2rem;
-  font-size: 1rem;
-  color: #ddd;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  border: 1px solid rgba(255,255,255,0.1);
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-header h1 {
-  font-size: 2.2rem;
-  color: #ffffff;
-  text-shadow: 1px 1px 4px #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
-footer {
-  margin-top: auto;
-  font-size: 0.9rem;
-  color: #ccc;
-  text-align: center;
-  padding: 1rem;
+#user-name {
+  font-weight: 600;
+  color: var(--black);
 }
 
+#logout-btn {
+  background-color: var(--off-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#logout-btn:hover {
+  background-color: #e5e7eb;
+}
+
+/* Game Sections */
+.dashboard-main h2 {
+  color: var(--black);
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.dashboard-main h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 4px;
+  background-color: var(--yellow);
+  border-radius: 2px;
+}
+
+/* Card Grid Layout */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.game-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--off-white);
+  transition: all 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-color: var(--light-blue);
+}
+
+.game-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.game-card p {
+  margin: 0;
+  color: var(--black);
+  opacity: 0.8;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  
   .sidebar {
-    width: 100%;
+    padding: 1rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .mode-buttons, .leaderboard-buttons {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
+  
+  .mode-buttons button, .leaderboard-buttons button {
+    flex: 1 1 160px;
+  }
+  
+  .dashboard-main {
+    padding: 1.5rem;
+  }
+}
 
-  .sidebar .dashboard-card {
-    width: 45%;
-    margin: 1rem 0;
-  }
+/* Animation Enhancements */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-  .main-content {
-    padding-top: 6rem;
-  }
+.dashboard-main {
+  animation: fadeIn 0.4s ease-out forwards;
+}
 
-  .user-panel {
-    top: 1rem;
-    right: 1rem;
-  }
+.game-card {
+  animation: fadeIn 0.4s ease-out forwards;
+  animation-delay: calc(var(--order) * 0.1s);
 }
