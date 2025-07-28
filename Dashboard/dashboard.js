@@ -1,6 +1,6 @@
 // ✅ Dynamically insert the username
-const username = localStorage.getItem("username") || "User";
-document.getElementById("username").textContent = username;
+const storedUsername = localStorage.getItem("username") || "User";
+document.getElementById("username").textContent = storedUsername;
 
 // ✅ Redirect buttons to correct mode pages
 const modeButtons = {
@@ -35,3 +35,36 @@ const profileSection = document.querySelector(".profile-section");
 profileSection.addEventListener("click", () => {
   profileSection.classList.toggle("active");
 });
+
+const usernameSpan = document.getElementById("username");
+const dropdownStats = document.getElementById("dropdown-stats");
+const profileIcon = document.querySelector(".profile-icon");
+
+// Retrieve data from localStorage (or use fallback)
+const username = localStorage.getItem("username") || "Guest";
+const streak = localStorage.getItem("streak") || 0;
+const accuracy = localStorage.getItem("accuracy") || "0%";
+const timePlayed = localStorage.getItem("timePlayed") || "0h";
+
+// Update welcome text
+if (usernameSpan) {
+  usernameSpan.textContent = username;
+}
+
+// Toggle dropdown
+if (profileIcon && dropdownStats) {
+  profileIcon.addEventListener("click", () => {
+    dropdownStats.classList.toggle("show");
+  });
+}
+
+// Inject stats
+if (dropdownStats) {
+  dropdownStats.innerHTML = `
+    <p><strong>${username}</strong></p>
+    <hr>
+    <p>🔥 Streak: ${streak}</p>
+    <p>🎯 Accuracy: ${accuracy}</p>
+    <p>⏱️ Time Played: ${timePlayed}</p>
+  `;
+}
