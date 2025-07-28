@@ -1,50 +1,50 @@
-<!-- dashboard.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dashboard | Spelling Bee Trainer</title>
   <link rel="stylesheet" href="dashboard.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <!-- 🔹 Top Bar -->
   <header class="top-bar">
-    <button class="logout-btn" onclick="logout()">Logout</button>
+    <button class="logout-btn">Logout</button>
+
     <div class="brand-center">
       <img src="honeybeepng.png" class="logo" alt="Bee Logo" />
-      <h1 class="welcome-text">Welcome, <span id="username"></span>!</h1>
+      <h1 class="welcome-text">Welcome, <span id="username">User</span>!</h1>
     </div>
-    <div id="dropdown-stats" class="profile-dropdown"></div>
-    <div class="profile-section" onclick="toggleProfileDropdown()">profile
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile" class="profile-icon">
-      <div class="profile-dropdown" id="profile-dropdown">
-      </div>
+
+    <div class="profile-section">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile" class="profile-icon" />
+      <div class="profile-dropdown" id="profile-dropdown"></div>
     </div>
   </header>
 
   <!-- 🔸 Main Layout -->
   <main class="dashboard-main">
+    <!-- Game Modes -->
     <section class="left-panel">
       <h2>Game Modes</h2>
-      <button class="dashboard-btn" onclick="goTo('Random Mode')"><i class="fas fa-dice"></i> Random Mode</button>
-      <button class="dashboard-btn" onclick="goTo('Section Mode')"><i class="fas fa-font"></i> Section A-Z</button>
-      <button class="dashboard-btn" onclick="goTo('Review Mistakes')"><i class="fas fa-redo"></i> Review Mistakes</button>
-      <button class="dashboard-btn" onclick="goTo('Streak Mode')"><i class="fas fa-fire"></i> Streak Mode</button>
+      <button class="dashboard-btn" data-mode="Random Mode"><i class="fas fa-dice"></i> Random Mode</button>
+      <button class="dashboard-btn" data-mode="Section Mode"><i class="fas fa-font"></i> Section A-Z</button>
+      <button class="dashboard-btn" data-mode="Review Mistakes"><i class="fas fa-redo"></i> Review Mistakes</button>
+      <button class="dashboard-btn" data-mode="Streak Mode"><i class="fas fa-fire"></i> Streak Mode</button>
     </section>
 
+    <!-- Leaderboards -->
     <section class="right-panel">
       <h2>Leaderboards</h2>
-      <button class="dashboard-btn" onclick="goTo('leaderboards/random')"><i class="fas fa-trophy"></i> Random Leaderboard</button>
-      <button class="dashboard-btn" onclick="goTo('leaderboards/section')"><i class="fas fa-trophy"></i> Section Leaderboard</button>
-      <button class="dashboard-btn" onclick="goTo('leaderboards/review')"><i class="fas fa-trophy"></i> Review Leaderboard</button>
-      <button class="dashboard-btn" onclick="goTo('leaderboards/streak')"><i class="fas fa-trophy"></i> Streak Leaderboard</button>
+      <button class="dashboard-btn" data-mode="leaderboards/random"><i class="fas fa-trophy"></i> Random Leaderboard</button>
+      <button class="dashboard-btn" data-mode="leaderboards/section"><i class="fas fa-trophy"></i> Section Leaderboard</button>
+      <button class="dashboard-btn" data-mode="leaderboards/review"><i class="fas fa-trophy"></i> Review Leaderboard</button>
+      <button class="dashboard-btn" data-mode="leaderboards/streak"><i class="fas fa-trophy"></i> Streak Leaderboard</button>
     </section>
   </main>
 
+  <!-- JS Link -->
   <script src="dashboard.js"></script>
-
 </body>
 </html>

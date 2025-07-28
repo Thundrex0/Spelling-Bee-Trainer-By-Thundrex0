@@ -53,3 +53,7 @@ function goTo(modeName) {
     console.error("No matching URL found for:", modeName);
   }
 }
+document.querySelector('.profile-section').addEventListener('click', () => {
+  document.getElementById("profile-dropdown").classList.toggle("show");
+});
+// ✅ Event listener for the profile section
