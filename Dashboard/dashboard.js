@@ -9,7 +9,7 @@ const modeButtons = {
   "Review Mistakes": "../Review Mistakes/index.html",
   "Streak Mode": "../Streak Mode/index.html",
   "Random Leaderboard": "../Leaderboards/random.html",
-  "Section A-Z Leaderboard": "../Leaderboards/section.html",
+  "Section Leaderboard": "../Leaderboards/section.html",
   "Review Leaderboard": "../Leaderboards/review.html",
   "Streak Leaderboard": "../Leaderboards/streak.html"
 };
