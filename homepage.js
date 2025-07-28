@@ -71,3 +71,10 @@ function login() {
     window.location.href =  "https://thundrex0.github.io/Spelling-Bee-Trainer-By-Thundrex0/Dashboard/";
   }, 1000);
 }
+const username = document.getElementById("usernameInput").value;
+localStorage.setItem("currentUser", username);
+
+// Only set if not already present:
+if (!localStorage.getItem("accuracy")) localStorage.setItem("accuracy", "0");
+if (!localStorage.getItem("streak")) localStorage.setItem("streak", "0");
+if (!localStorage.getItem("timePlayed")) localStorage.setItem("timePlayed", "0");
