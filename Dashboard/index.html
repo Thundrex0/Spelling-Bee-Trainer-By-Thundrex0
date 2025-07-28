@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard | Spelling Bee Trainer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-
   <!-- Top Bar -->
   <header class="top-bar">
     <button class="logout-btn">Logout</button>
 
     <div class="brand-center">
-      <img src="logo.png" alt="Logo" class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/282/282727.png" alt="Logo" class="logo">
       <h1 class="welcome-text">
         Welcome, <span id="username">User</span>!
       </h1>
     </div>
 
     <div class="profile-section">
-      <img src="profile.png" alt="Profile" class="profile-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile" class="profile-icon">
     </div>
   </header>
 
@@ -28,30 +28,24 @@
   <main class="dashboard-main">
     <!-- Left: Game Modes -->
     <section class="left-panel">
-      <h2>Modes</h2>
-      <button class="dashboard-btn">🎲 Random Mode</button>
-      <button class="dashboard-btn">🔠 Section A-Z</button>
-      <button class="dashboard-btn">♻️ Review Mistakes</button>
-      <button class="dashboard-btn">🔥 Streak Mode</button>
+      <h2>Game Modes</h2>
+      <button class="dashboard-btn"><i class="fas fa-random"></i> Random Mode</button>
+      <button class="dashboard-btn"><i class="fas fa-sort-alpha-down"></i> Section A-Z</button>
+      <button class="dashboard-btn"><i class="fas fa-redo"></i> Review Mistakes</button>
+      <button class="dashboard-btn"><i class="fas fa-fire"></i> Streak Mode</button>
     </section>
 
-    <!-- Right: Leaderboards -->
+    <!-- Right: Leaderboards Placeholder -->
     <section class="right-panel">
       <h2>Leaderboards</h2>
-      <button class="dashboard-btn">🏆 Random</button>
-      <button class="dashboard-btn">🏆 Section</button>
-      <button class="dashboard-btn">🏆 Review</button>
-      <button class="dashboard-btn">🏆 Streak</button>
+      <p style="color: #666; font-size: 0.95rem;">No leaderboard data available yet. Play to get ranked!</p>
     </section>
   </main>
 
   <script>
-    // Set username dynamically from localStorage or API
+    // Dynamically set username from localStorage or fallback
     const username = localStorage.getItem('username') || "User";
     document.getElementById('username').textContent = username;
   </script>
-
-  <script src="dashboard.js"></script>
-
 </body>
 </html>
