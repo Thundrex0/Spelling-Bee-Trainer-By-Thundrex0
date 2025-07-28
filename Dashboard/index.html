@@ -1,222 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dashboard | Spelling Bee Trainer</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-  <div class="dashboard-container">
-    <!-- Side Navigation -->
-    <aside class="sidebar">
-      <div class="branding">
-        <div class="logo">🐝</div>
-        <h1>Spelling Bee</h1>
-        <p>Trainer Dashboard</p>
-      </div>
 
-      <nav class="main-nav">
-        <div class="nav-group">
-          <h2 class="nav-title">Game Modes</h2>
-          <ul>
-            <li class="active">
-              <a href="#">
-                <span class="nav-icon">🎲</span>
-                <span class="nav-text">Random Mode</span>
-                <span class="nav-badge">New</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="nav-icon">🔠</span>
-                <span class="nav-text">Section A-Z</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="nav-icon">♻️</span>
-                <span class="nav-text">Review Mistakes</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="nav-icon">🔥</span>
-                <span class="nav-text">Streak Mode</span>
-                <span class="nav-badge">Popular</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <button class="logout-btn">Logout</button>
 
-        <div class="nav-group">
-          <h2 class="nav-title">Leaderboards</h2>
-          <ul>
-            <li>
-              <a href="#">
-                <span class="nav-icon">🏆</span>
-                <span class="nav-text">Random</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="nav-icon">🏆</span>
-                <span class="nav-text">Section</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="nav-icon">🏆</span>
-                <span class="nav-text">Review</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="nav-icon">🏆</span>
-                <span class="nav-text">Streak</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </aside>
+    <div class="brand-center">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1 class="welcome-text">
+        Welcome, <span id="username">User</span>!
+      </h1>
+    </div>
 
-    <!-- Main Content Area -->
-    <main class="main-content">
-      <!-- Top Bar -->
-      <header class="top-bar">
-        <div class="user-greeting">
-          <h2>Welcome back, <span id="user-name">Alex</span>!</h2>
-          <p>Ready for today's spelling challenge?</p>
-        </div>
-        <button id="logout-btn" class="logout-btn">
-          <span>Sign Out</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-            <polyline points="16 17 21 12 16 7"></polyline>
-            <line x1="21" y1="12" x2="9" y2="12"></line>
-          </svg>
-        </button>
-      </header>
+    <div class="profile-section">
+      <img src="profile.png" alt="Profile" class="profile-icon">
+    </div>
+  </header>
 
-      <!-- Dashboard Content -->
-      <div class="content-area">
-        <section class="stats-section">
-          <div class="stat-card">
-            <div class="stat-icon" style="background-color: #FEF3C7;">
-              <span>🔥</span>
-            </div>
-            <div class="stat-info">
-              <h3>12</h3>
-              <p>Current Streak</p>
-            </div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-icon" style="background-color: #DBEAFE;">
-              <span>📊</span>
-            </div>
-            <div class="stat-info">
-              <h3>87%</h3>
-              <p>Accuracy</p>
-            </div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-icon" style="background-color: #D1FAE5;">
-              <span>⏱️</span>
-            </div>
-            <div class="stat-info">
-              <h3>24</h3>
-              <p>Hours Practiced</p>
-            </div>
-          </div>
-        </section>
+  <!-- Main Layout -->
+  <main class="dashboard-main">
+    <!-- Left: Game Modes -->
+    <section class="left-panel">
+      <h2>Modes</h2>
+      <button class="dashboard-btn">🎲 Random Mode</button>
+      <button class="dashboard-btn">🔠 Section A-Z</button>
+      <button class="dashboard-btn">♻️ Review Mistakes</button>
+      <button class="dashboard-btn">🔥 Streak Mode</button>
+    </section>
 
-        <section class="game-modes">
-          <h3 class="section-title">Start Practicing</h3>
-          <div class="mode-grid">
-            <div class="mode-card" style="border-top: 4px solid #3B82F6;">
-              <div class="card-header">
-                <span class="card-icon">🎲</span>
-                <h4>Random Mode</h4>
-              </div>
-              <p>Test yourself with random words from our dictionary</p>
-              <button class="play-btn">Play Now</button>
-            </div>
-            
-            <div class="mode-card" style="border-top: 4px solid #10B981;">
-              <div class="card-header">
-                <span class="card-icon">🔠</span>
-                <h4>Section A-Z</h4>
-              </div>
-              <p>Focus on specific letter sections systematically</p>
-              <button class="play-btn">Play Now</button>
-            </div>
-            
-            <div class="mode-card" style="border-top: 4px solid #F59E0B;">
-              <div class="card-header">
-                <span class="card-icon">♻️</span>
-                <h4>Review Mistakes</h4>
-              </div>
-              <p>Revisit words you've struggled with previously</p>
-              <button class="play-btn">Play Now</button>
-            </div>
-            
-            <div class="mode-card" style="border-top: 4px solid #EF4444;">
-              <div class="card-header">
-                <span class="card-icon">🔥</span>
-                <h4>Streak Mode</h4>
-              </div>
-              <p>See how many words you can spell correctly in a row</p>
-              <button class="play-btn">Play Now</button>
-            </div>
-          </div>
-        </section>
+    <!-- Right: Leaderboards -->
+    <section class="right-panel">
+      <h2>Leaderboards</h2>
+      <button class="dashboard-btn">🏆 Random</button>
+      <button class="dashboard-btn">🏆 Section</button>
+      <button class="dashboard-btn">🏆 Review</button>
+      <button class="dashboard-btn">🏆 Streak</button>
+    </section>
+  </main>
 
-        <section class="leaderboard-section">
-          <h3 class="section-title">Leaderboards</h3>
-          <div class="leaderboard-tabs">
-            <button class="tab-btn active">Random</button>
-            <button class="tab-btn">Section</button>
-            <button class="tab-btn">Review</button>
-            <button class="tab-btn">Streak</button>
-          </div>
-          <div class="leaderboard-card">
-            <table>
-              <thead>
-                <tr>
-                  <th>Rank</th>
-                  <th>Player</th>
-                  <th>Score</th>
-                  <th>Streak</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>SpellingMaster22</td>
-                  <td>9,850</td>
-                  <td>127</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>WordWizard</td>
-                  <td>9,720</td>
-                  <td>118</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>LexiChamp</td>
-                  <td>9,650</td>
-                  <td>112</td>
-                </tr>
-              </tbody>
-            </table>
-            <a href="#" class="view-all">View Full Leaderboard →</a>
-          </div>
-        </section>
-      </div>
-    </main>
-  </div>
+  <script>
+    // Set username dynamically from localStorage or API
+    const username = localStorage.getItem('username') || "User";
+    document.getElementById('username').textContent = username;
+  </script>
+
+  <script src="dashboard.js"></script>
+
 </body>
 </html>
