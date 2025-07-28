@@ -1,26 +1,37 @@
-// 🧠 Show the current user's name
-const currentUser = localStorage.getItem("currentUser");
-const userNameSpan = document.getElementById("user-name");
+// Load username from localStorage or default
+document.addEventListener("DOMContentLoaded", () => {
+  const username = localStorage.getItem('username') || "User";
+  document.getElementById('username').textContent = username;
 
-if (!currentUser) {
-  // If no user is logged in, send back to login page
-  window.location.href = "../Homepage/index.html";
-} else {
-  userNameSpan.textContent = currentUser;
-}
-
-// 🚪 Logout function
-document.getElementById("logout-btn").addEventListener("click", () => {
-  localStorage.removeItem("currentUser");
-  window.location.href = "../Homepage/index.html";
+  // Optional: Setup event listeners for buttons
+  setupButtons();
 });
 
-// 🎮 Navigate to game modes
-function goToMode(modeFolder) {
-  window.location.href = `../${modeFolder}/index.html`;
-}
+function setupButtons() {
+  const buttons = document.querySelectorAll('.dashboard-btn');
 
-// 🏆 Navigate to leaderboard pages
-function goToLeaderboard(type) {
-  window.location.href = `../Leaderboards/${type}.html`;
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const label = btn.innerText.trim().toLowerCase();
+
+      if (label.includes('random')) {
+        window.location.href = "random.html"; // Replace with actual paths
+      } else if (label.includes('section')) {
+        window.location.href = "section.html";
+      } else if (label.includes('review')) {
+        window.location.href = "review.html";
+      } else if (label.includes('streak')) {
+        window.location.href = "streak.html";
+      } else if (label.includes('view all')) {
+        alert("Leaderboard feature coming soon! 🚀");
+      }
+    });
+  });
+
+  // Logout button logic
+  const logoutBtn = document.querySelector(".logout-btn");
+  logoutBtn.addEventListener("click", () => {
+    localStorage.removeItem('username');
+    window.location.href = "../index.html"; // Or your login/home page
+  });
 }
