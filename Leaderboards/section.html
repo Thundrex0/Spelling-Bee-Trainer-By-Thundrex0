@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Section Mode Leaderboard</title>
   <style>
@@ -119,30 +119,20 @@
     const tbody = document.getElementById("leaderboard-body");
     const users = JSON.parse(localStorage.getItem("users")) || {};
 
-    // Extract and sort users by random score
-    const sortedUsers = Object.entries(users)
-      .map(([username, data]) => ({
-        username,
-        score: data.scores?.section || 0
-      }))
-      .sort((a, b) => b.score - a.score);
+    const sectionScores = Object.entries(users).map(([username, data]) => {
+      const score = (data.scores && typeof data.scores.section === 'number') ? data.scores.section : 0;
+      return { username, score };
+    });
 
-    sortedUsers.forEach((user, index) => {
+    sectionScores.sort((a, b) => b.score - a.score);
+
+    sectionScores.forEach((user, index) => {
       const row = document.createElement("tr");
-
-      const rankCell = document.createElement("td");
-      rankCell.textContent = index + 1;
-
-      const nameCell = document.createElement("td");
-      nameCell.textContent = user.username;
-
-      const scoreCell = document.createElement("td");
-      scoreCell.textContent = user.score;
-
-      row.appendChild(rankCell);
-      row.appendChild(nameCell);
-      row.appendChild(scoreCell);
-
+      row.innerHTML = `
+        <td>${index + 1}</td>
+        <td>${user.username}</td>
+        <td>${user.score}</td>
+      `;
       tbody.appendChild(row);
     });
   </script>

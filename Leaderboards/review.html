@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Review Mode Leaderboard</title>
   <style>
@@ -110,7 +110,7 @@
         </tr>
       </thead>
       <tbody id="leaderboard-body">
-        <!-- Will be populated by JS -->
+        <!-- Injected by JS -->
       </tbody>
     </table>
   </main>
@@ -119,29 +119,20 @@
     const tbody = document.getElementById("leaderboard-body");
     const users = JSON.parse(localStorage.getItem("users")) || {};
 
-    const sortedUsers = Object.entries(users)
-      .map(([username, data]) => ({
-        username,
-        score: data.scores?.review || 0
-      }))
-      .sort((a, b) => b.score - a.score);
+    const reviewScores = Object.entries(users).map(([username, data]) => {
+      const score = (data.scores && typeof data.scores.review === 'number') ? data.scores.review : 0;
+      return { username, score };
+    });
 
-    sortedUsers.forEach((user, index) => {
+    reviewScores.sort((a, b) => b.score - a.score);
+
+    reviewScores.forEach((user, index) => {
       const row = document.createElement("tr");
-
-      const rank = document.createElement("td");
-      rank.textContent = index + 1;
-
-      const name = document.createElement("td");
-      name.textContent = user.username;
-
-      const score = document.createElement("td");
-      score.textContent = user.score;
-
-      row.appendChild(rank);
-      row.appendChild(name);
-      row.appendChild(score);
-
+      row.innerHTML = `
+        <td>${index + 1}</td>
+        <td>${user.username}</td>
+        <td>${user.score}</td>
+      `;
       tbody.appendChild(row);
     });
   </script>
