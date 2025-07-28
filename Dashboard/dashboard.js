@@ -5,10 +5,10 @@ document.getElementById("username").textContent = username;
 
 // ✅ Redirect buttons to correct mode pages
 const modeButtons = {
-  "Random Mode": "../Random/index.html",
-  "Section A-Z": "../Section/index.html",
-  "Review Mistakes": "../Review/index.html",
-  "Streak Mode": "../Streak/index.html",
+  "Random Mode": "../Random Mode/index.html",
+  "Section A-Z": "../Section Mode/index.html",
+  "Review Mistakes": "../Review Mode/index.html",
+  "Streak Mode": "../Streak Mode/index.html",
   "Random Leaderboard": "../Leaderboards/random.html",
   "Section Leaderboard": "../Leaderboards/section.html",
   "Review Leaderboard": "../Leaderboards/review.html",
