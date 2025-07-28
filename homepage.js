@@ -4,6 +4,9 @@ function register() {
   const pin = document.getElementById("pin").value.trim();
   const message = document.getElementById("message");
 
+  localStorage.setItem('username', enteredUsername);
+
+
   if (!username || !pin || pin.length !== 4 || isNaN(pin)) {
     message.textContent = "Enter a valid username and 4-digit PIN.";
     message.className = "message error";

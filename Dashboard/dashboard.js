@@ -2,14 +2,19 @@
 const username = localStorage.getItem("username") || "User";
 document.getElementById("username").textContent = username;
 
+
 // ✅ Redirect buttons to correct mode pages
 const modeButtons = {
-  "Random Mode": "random.html",
-  "Section A-Z": "section.html",
-  "Review Mistakes": "review.html",
-  "Streak Mode": "streak.html",
-  "View Leaderboard": "leaderboard.html"
+  "Random Mode": "../Random/index.html",
+  "Section A-Z": "../Section/index.html",
+  "Review Mistakes": "../Review/index.html",
+  "Streak Mode": "../Streak/index.html",
+  "Random Leaderboard": "../Leaderboards/random.html",
+  "Section Leaderboard": "../Leaderboards/section.html",
+  "Review Leaderboard": "../Leaderboards/review.html",
+  "Streak Leaderboard": "../Leaderboards/streak.html"
 };
+
 
 // Add event listeners to mode buttons
 document.querySelectorAll(".dashboard-btn").forEach(btn => {

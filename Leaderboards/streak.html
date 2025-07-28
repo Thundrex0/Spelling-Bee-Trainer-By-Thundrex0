@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Section Mode Leaderboard</title>
+  <title>Streak Mode Leaderboard</title>
   <style>
     body {
       margin: 0;
@@ -95,7 +95,7 @@
 <body>
 
   <header class="leaderboard-header">
-    <h1>🏆 Section Mode Leaderboard</h1>
+    <h1>🏆 Streak Mode Leaderboard</h1>
     <a href="../Dashboard/index.html" id="back-btn">🔙 Back to Dashboard</a>
   </header>
 
@@ -122,7 +122,7 @@
     const sortedUsers = Object.entries(users)
       .map(([username, data]) => ({
         username,
-        score: data.scores?.section || 0
+        score: data.scores?.streak || 0
       }))
       .sort((a, b) => b.score - a.score);
 
