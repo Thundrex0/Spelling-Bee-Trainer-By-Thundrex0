@@ -4,14 +4,14 @@ document.getElementById("username").textContent = username;
 
 // ✅ Redirect buttons to correct mode pages
 const modeButtons = {
-  "Random Mode": "../Random/index.html",
-  "Section A-Z": "../Section/index.html",
-  "Review Mistakes": "../Review/index.html",
-  "Streak Mode": "../Streak/index.html",
+  "Random Mode": "../Random Mode/index.html",
+  "Section A-Z": "../Section A-Z /index.html",
+  "Review Mistakes": "../Review Mistakes/index.html",
+  "Streak Mode": "../Streak Mode/index.html",
   "Random Leaderboard": "../Leaderboards/random.html",
-  "Section A-Z Leaderboard": "../Leaderboards/random.html",
-  "Review Leaderboard": "../Leaderboards/random.html",
-  "Streak Leaderboard": "../Leaderboards/random.html"
+  "Section A-Z Leaderboard": "../Leaderboards/section.html",
+  "Review Leaderboard": "../Leaderboards/review.html",
+  "Streak Leaderboard": "../Leaderboards/streak.html"
 };
 
 
