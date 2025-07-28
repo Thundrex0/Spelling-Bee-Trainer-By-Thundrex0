@@ -1,6 +1,6 @@
 // 🔐 REGISTER NEW USER
 function register() {
-  const username = document.getElementById("currentUser").value.trim().toLowerCase();
+  const username = document.getElementById("username").value.trim().toLowerCase();
   const pin = document.getElementById("pin").value.trim();
   const message = document.getElementById("message");
 
@@ -32,9 +32,9 @@ function register() {
   };
 
   localStorage.setItem("users", JSON.stringify(users));
-  localStorage.setItem("currentUser", username);
+  localStorage.setItem("username", username);
 
-  message.textContent = `Welcome, ${currentUser}! Redirecting...`;
+  message.textContent = `Welcome, ${username}! Redirecting...`;
   message.className = "message success";
 
   setTimeout(() => {
@@ -62,7 +62,7 @@ function login() {
     return;
   }
 
-  localStorage.setItem("currentUser", username);
+  localStorage.setItem("username", username);
 
   message.textContent = `Welcome back, ${username}! Redirecting...`;
   message.className = "message success";

@@ -1,7 +1,7 @@
 let mistakeWords = [];
 let currentWord = null;
 let currentIndex = 0;
-const user = localStorage.getItem("currentUser");
+const user = localStorage.getItem("username");
 
 // DOM Elements
 const heading = document.getElementById("word-heading");
@@ -27,7 +27,7 @@ if (!user) {
 }
 
 function logout() {
-  localStorage.removeItem("currentUser");
+  localStorage.removeItem("username");
   window.location.href = "../Homepage/index.html";
 }
 

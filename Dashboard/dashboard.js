@@ -1,6 +1,6 @@
 // ✅ Dynamically insert the username
-const username = localStorage.getItem("currentUser") || "User";
-document.getElementById("currentUser").textContent = username;
+const username = localStorage.getItem("username") || "User";
+document.getElementById("username").textContent = username;
 
 // ✅ Redirect buttons to correct mode pages
 const modeButtons = {

@@ -1,5 +1,5 @@
 // Get elements
-const usernameSpan = document.getElementById("currentUser");
+const usernameSpan = document.getElementById("username");
 const dropdownStats = document.getElementById("dropdown-stats");
 const profileIcon = document.querySelector(".profile-icon");
 
@@ -24,7 +24,7 @@ if (profileIcon && dropdownStats) {
 // Inject stats
 if (dropdownStats) {
   dropdownStats.innerHTML = `
-    <p><strong>${currentUser}</strong></p>
+    <p><strong>${username}</strong></p>
     <hr>
     <p>🔥 Streak: ${streak}</p>
     <p>🎯 Accuracy: ${accuracy}</p>

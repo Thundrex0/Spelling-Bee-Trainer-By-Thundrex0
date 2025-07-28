@@ -2,7 +2,7 @@
 let currentWord = null;
 let currentIndex = null;
 let usedIndexes = [];
-let user = localStorage.getItem("currentUser");
+let user = localStorage.getItem("username");
 
 const input = document.getElementById("user-input");
 const meaningBox = document.getElementById("word-meaning");
@@ -23,7 +23,7 @@ if (!user) window.location.href = "../Homepage/index.html";
 else loadRandomWord();
 
 function logout() {
-  localStorage.removeItem("currentUser");
+  localStorage.removeItem("username");
   window.location.href = "../Homepage/index.html";
 }
 
