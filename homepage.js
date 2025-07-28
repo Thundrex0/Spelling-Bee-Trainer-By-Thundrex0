@@ -4,8 +4,6 @@ function register() {
   const pin = document.getElementById("pin").value.trim();
   const message = document.getElementById("message");
 
-
-
   if (!username || !pin || pin.length !== 4 || isNaN(pin)) {
     message.textContent = "Enter a valid username and 4-digit PIN.";
     message.className = "message error";
@@ -34,8 +32,7 @@ function register() {
   };
 
   localStorage.setItem("users", JSON.stringify(users));
-  localStorage.setItem("username", username);
-  
+  localStorage.setItem("currentUser", username);
 
   message.textContent = `Welcome, ${username}! Redirecting...`;
   message.className = "message success";
@@ -65,7 +62,7 @@ function login() {
     return;
   }
 
-  localStorage.setItem("username", username);
+  localStorage.setItem("currentUser", username);
 
   message.textContent = `Welcome back, ${username}! Redirecting...`;
   message.className = "message success";
