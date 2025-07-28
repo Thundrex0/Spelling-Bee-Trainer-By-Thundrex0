@@ -44,7 +44,7 @@ function register() {
 
 // 🔓 LOGIN EXISTING USER
 function login() {
-  const username = document.getElementById("username").value.trim().toLowerCase();
+  const username = document.getElementById("currentUser").value.trim().toLowerCase();
   const pin = document.getElementById("pin").value.trim();
   const message = document.getElementById("message");
 
