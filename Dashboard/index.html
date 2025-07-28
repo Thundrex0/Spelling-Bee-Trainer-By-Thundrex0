@@ -1,52 +1,51 @@
+<!-- dashboard.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dashboard | Spelling Bee Trainer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Top Bar -->
+
+  <!-- 🔹 Top Bar -->
   <header class="top-bar">
-    <button class="logout-btn">Logout</button>
-
+    <button class="logout-btn" onclick="logout()">Logout</button>
     <div class="brand-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/282/282727.png" alt="Logo" class="logo">
-      <h1 class="welcome-text">
-        Welcome, <span id="username">User</span>!
-      </h1>
+      <img src="../assets/logo.png" class="logo" alt="Bee Logo" />
+      <h1 class="welcome-text">Welcome, <span id="username">User</span>!</h1>
     </div>
-
-    <div class="profile-section">
+    <div class="profile-section" onclick="toggleProfileDropdown()">
       <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile" class="profile-icon">
+      <div class="profile-dropdown" id="profile-dropdown">
+        <p><strong>Streak:</strong> <span id="streak-count">12</span></p>
+        <p><strong>Accuracy:</strong> <span id="accuracy">87%</span></p>
+        <p><strong>Time Played:</strong> <span id="play-time">24h</span></p>
+      </div>
     </div>
   </header>
 
-  <!-- Main Layout -->
+  <!-- 🔸 Main Layout -->
   <main class="dashboard-main">
-    <!-- Left: Game Modes -->
     <section class="left-panel">
       <h2>Game Modes</h2>
-      <button class="dashboard-btn"><i class="fas fa-random"></i> Random Mode</button>
-      <button class="dashboard-btn"><i class="fas fa-sort-alpha-down"></i> Section A-Z</button>
-      <button class="dashboard-btn"><i class="fas fa-redo"></i> Review Mistakes</button>
-      <button class="dashboard-btn"><i class="fas fa-fire"></i> Streak Mode</button>
+      <button class="dashboard-btn" onclick="goTo('random')"><i class="fas fa-dice"></i> Random Mode</button>
+      <button class="dashboard-btn" onclick="goTo('section')"><i class="fas fa-font"></i> Section A-Z</button>
+      <button class="dashboard-btn" onclick="goTo('review')"><i class="fas fa-redo"></i> Review Mistakes</button>
+      <button class="dashboard-btn" onclick="goTo('streak')"><i class="fas fa-fire"></i> Streak Mode</button>
     </section>
 
-    <!-- Right: Leaderboards Placeholder -->
     <section class="right-panel">
       <h2>Leaderboards</h2>
-      <p style="color: #666; font-size: 0.95rem;">No leaderboard data available yet. Play to get ranked!</p>
+      <button class="dashboard-btn" onclick="goTo('leaderboards/random')"><i class="fas fa-trophy"></i> Random Leaderboard</button>
+      <button class="dashboard-btn" onclick="goTo('leaderboards/section')"><i class="fas fa-trophy"></i> Section Leaderboard</button>
+      <button class="dashboard-btn" onclick="goTo('leaderboards/review')"><i class="fas fa-trophy"></i> Review Leaderboard</button>
+      <button class="dashboard-btn" onclick="goTo('leaderboards/streak')"><i class="fas fa-trophy"></i> Streak Leaderboard</button>
     </section>
   </main>
 
-  <script>
-    // Dynamically set username from localStorage or fallback
-    const username = localStorage.getItem('username') || "User";
-    document.getElementById('username').textContent = username;
-  </script>
   <script src="dashboard.js"></script>
 </body>
 </html>

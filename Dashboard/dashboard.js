@@ -1,37 +1,33 @@
-// Load username from localStorage or default
-document.addEventListener("DOMContentLoaded", () => {
-  const username = localStorage.getItem('username') || "User";
-  document.getElementById('username').textContent = username;
+// ✅ Dynamically insert the username
+const username = localStorage.getItem("username") || "User";
+document.getElementById("username").textContent = username;
 
-  // Optional: Setup event listeners for buttons
-  setupButtons();
+// ✅ Redirect buttons to correct mode pages
+const modeButtons = {
+  "Random Mode": "random.html",
+  "Section A-Z": "section.html",
+  "Review Mistakes": "review.html",
+  "Streak Mode": "streak.html",
+  "View Leaderboard": "leaderboard.html"
+};
+
+// Add event listeners to mode buttons
+document.querySelectorAll(".dashboard-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const mode = btn.textContent.trim();
+    const target = modeButtons[mode];
+    if (target) window.location.href = `./${target}`;
+  });
 });
 
-function setupButtons() {
-  const buttons = document.querySelectorAll('.dashboard-btn');
+// ✅ Logout button clears session
+document.querySelector(".logout-btn").addEventListener("click", () => {
+  localStorage.removeItem("username");
+  window.location.href = "../index.html";
+});
 
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const label = btn.innerText.trim().toLowerCase();
-
-      if (label.includes('random')) {
-        window.location.href = "random.html"; // Replace with actual paths
-      } else if (label.includes('section')) {
-        window.location.href = "section.html";
-      } else if (label.includes('review')) {
-        window.location.href = "review.html";
-      } else if (label.includes('streak')) {
-        window.location.href = "streak.html";
-      } else if (label.includes('view all')) {
-        alert("Leaderboard feature coming soon! 🚀");
-      }
-    });
-  });
-
-  // Logout button logic
-  const logoutBtn = document.querySelector(".logout-btn");
-  logoutBtn.addEventListener("click", () => {
-    localStorage.removeItem('username');
-    window.location.href = "../index.html"; // Or your login/home page
-  });
-}
+// ✅ Toggle profile dropdown
+const profileSection = document.querySelector(".profile-section");
+profileSection.addEventListener("click", () => {
+  profileSection.classList.toggle("active");
+});

@@ -1,12 +1,11 @@
-/* dashboard.css */
 :root {
   --primary-blue: #1a73e8;
   --light-blue: #e8f0fe;
-  --dark-blue: #0d47a1;
+  --dark-blue: #0c47a1;
   --yellow: #fbbc04;
   --black: #202124;
-  --white: #ffffff;
   --gray: #f1f3f4;
+  --white: #ffffff;
   --divider: #dadce0;
 }
 
@@ -23,14 +22,16 @@ body {
   min-height: 100vh;
 }
 
-/* Top Bar */
+/* 🔹 Top Bar */
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--white);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  position: relative;
 }
 
 .logout-btn {
@@ -38,7 +39,7 @@ body {
   color: var(--white);
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 6px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -56,64 +57,84 @@ body {
 
 .logo {
   height: 40px;
-  width: auto;
 }
 
 .welcome-text {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 600;
   color: var(--black);
 }
 
 #username {
   color: var(--primary-blue);
-  font-weight: 600;
 }
 
+/* 🔸 Profile Dropdown */
 .profile-section {
-  display: flex;
-  align-items: center;
+  position: relative;
+  cursor: pointer;
 }
 
 .profile-icon {
-  height: 36px;
-  width: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  object-fit: cover;
   border: 2px solid var(--divider);
+  object-fit: cover;
 }
 
-/* Main Layout */
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  top: 52px;
+  right: 0;
+  background-color: var(--white);
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 99;
+}
+
+.profile-dropdown p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.profile-section.active .profile-dropdown {
+  display: block;
+}
+
+/* 🔸 Main Layout */
 .dashboard-main {
-  display: flex;
-  flex-direction: row;
-  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
+/* 🔹 Panels */
 .left-panel,
 .right-panel {
-  flex: 1;
   background-color: var(--white);
-  border-radius: 8px;
   padding: 1.5rem;
+  border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.left-panel {
-  border-right: 1px solid var(--divider);
-}
-
 h2 {
-  color: var(--primary-blue);
-  margin-bottom: 1.5rem;
   font-size: 1.5rem;
-  padding-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--primary-blue);
   border-bottom: 2px solid var(--yellow);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
+/* 🔹 Buttons */
 .dashboard-btn {
   display: block;
   width: 100%;
@@ -122,19 +143,19 @@ h2 {
   background-color: var(--light-blue);
   color: var(--primary-blue);
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1rem;
   font-weight: 500;
   text-align: left;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 .dashboard-btn:hover {
   background-color: var(--primary-blue);
   color: var(--white);
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .dashboard-btn i {
@@ -142,25 +163,29 @@ h2 {
   font-size: 1.2rem;
 }
 
-/* Responsive Design */
+/* 🔹 Responsive */
 @media (max-width: 768px) {
-  .dashboard-main {
+  .top-bar {
     flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .dashboard-main {
+    grid-template-columns: 1fr;
     padding: 1rem;
   }
 
-  .left-panel {
-    border-right: none;
-    border-bottom: 1px solid var(--divider);
-  }
-
-  .top-bar {
+  .brand-center {
     flex-direction: column;
-    gap: 0.5rem;
-    align-items: flex-start;
   }
 
   .logout-btn {
-    align-self: flex-end;
+    width: 100%;
+  }
+
+  .profile-dropdown {
+    right: 50%;
+    transform: translateX(50%);
   }
 }
