@@ -1,17 +1,19 @@
+// ✅ Check login
 const username = localStorage.getItem("username");
-if (!username) window.location.href = "../index.html"; // Ensure only logged-in users play
+if (!username) window.location.href = "../index.html";
+
+// ✅ Initialize values
 let correctCount = 0;
 let totalAttempts = 0;
 let streak = parseInt(localStorage.getItem("streak")) || 0;
-let startTime = Date.now();
+let totalTime = parseInt(localStorage.getItem("timePlayed")) || 0;
+const startTime = Date.now();
 
-// === GLOBAL STATE ===
 let filteredWords = [];
 let currentWord = null;
 let currentIndex = 0;
-let user = localStorage.getItem("currentUser");
 
-// DOM ELEMENTS
+// DOM
 const letterGrid = document.getElementById("letter-grid");
 const input = document.getElementById("user-input");
 const meaningBox = document.getElementById("word-meaning");
@@ -19,27 +21,22 @@ const posBox = document.getElementById("word-pos");
 const heading = document.getElementById("word-heading");
 const feedback = document.getElementById("feedback-text");
 
-// === INITIAL LOAD ===
-if (!user) {
-  window.location.href = "../Homepage/index.html";
-} else {
-  generateLetterButtons();
-}
+// === INIT
+generateLetterButtons();
 
-// === LOGOUT ===
+// === Event Listeners
 document.getElementById("logout-btn").addEventListener("click", () => {
-  localStorage.removeItem("currentUser");
-  window.location.href = "../Homepage/index.html";
+  localStorage.removeItem("username");
+  window.location.href = "../index.html";
 });
 
-// === BUTTON ACTIONS ===
 document.getElementById("check-btn").addEventListener("click", checkAnswer);
 document.getElementById("next-btn").addEventListener("click", loadNextWord);
 document.getElementById("retry-btn").addEventListener("click", retryWord);
 document.getElementById("show-answer-btn").addEventListener("click", showAnswer);
 document.getElementById("play-sound").addEventListener("click", playWord);
 
-// === GENERATE A–Z BUTTONS ===
+// === Letter Buttons
 function generateLetterButtons() {
   for (let i = 65; i <= 90; i++) {
     const letter = String.fromCharCode(i);
@@ -50,14 +47,17 @@ function generateLetterButtons() {
   }
 }
 
-// === FILTER AND LOAD ===
 function selectLetter(letter) {
-  filteredWords = wordList.filter(word => word.word.toLowerCase().startsWith(letter.toLowerCase()));
+  filteredWords = wordList.filter(word =>
+    word.word.toLowerCase().startsWith(letter.toLowerCase())
+  );
+
   if (filteredWords.length === 0) {
     heading.textContent = `No words found for ${letter}`;
     resetInfo();
     return;
   }
+
   currentIndex = 0;
   loadCurrentWord();
 }
@@ -67,7 +67,6 @@ function loadCurrentWord() {
   heading.textContent = "Spell the word!";
   input.value = "";
   feedback.textContent = "";
-
   meaningBox.textContent = currentWord.meaning;
   posBox.textContent = currentWord.partOfSpeech;
 }
@@ -75,14 +74,11 @@ function loadCurrentWord() {
 function loadNextWord() {
   feedback.textContent = "";
   input.value = "";
-
-  currentIndex++;
-  if (currentIndex >= filteredWords.length) currentIndex = 0;
-
+  currentIndex = (currentIndex + 1) % filteredWords.length;
   loadCurrentWord();
 }
 
-// === CHECK, RETRY, ANSWER ===
+// === Word Check
 function checkAnswer() {
   const userInput = input.value.trim().toLowerCase();
   const correct = currentWord.word.toLowerCase();
@@ -93,33 +89,26 @@ function checkAnswer() {
     return;
   }
 
-  if (userInput === correct) {
+  const isCorrect = userInput === correct;
+
+  totalAttempts++;
+  if (isCorrect) {
+    correctCount++;
+    streak++;
     feedback.textContent = "✅ Correct!";
     feedback.style.color = "#10b981";
     saveScore();
   } else {
+    streak = 0;
     feedback.textContent = "❌ Incorrect!";
     feedback.style.color = "#ef4444";
     saveMistake(currentWord.word);
   }
-  // Replace these conditions with your real logic
-const isCorrect = userInput.toLowerCase() === correctAnswer.toLowerCase();
 
-totalAttempts++;
-if (isCorrect) {
-  correctCount++;
-  streak++;
-} else {
-  streak = 0;
-}
-
-// Save updated streak
-localStorage.setItem("streak", streak);
-
-// Update accuracy
-const accuracy = Math.round((correctCount / totalAttempts) * 100);
-localStorage.setItem("accuracy", accuracy + "%");
-
+  // Save stats
+  localStorage.setItem("streak", streak);
+  const accuracy = Math.round((correctCount / totalAttempts) * 100);
+  localStorage.setItem("accuracy", accuracy + "%");
 }
 
 function retryWord() {
@@ -138,21 +127,21 @@ function playWord() {
   speechSynthesis.speak(utter);
 }
 
-// === STORAGE FUNCTIONS ===
+// === Save User Score
 function saveScore() {
-  const users = JSON.parse(localStorage.getItem("users"));
-  if (!users[user]) return;
+  const users = JSON.parse(localStorage.getItem("users")) || {};
+  if (!users[username]) return;
 
-  users[user].scores.section += 1;
+  users[username].scores.section += 1;
   localStorage.setItem("users", JSON.stringify(users));
 }
 
 function saveMistake(word) {
-  const users = JSON.parse(localStorage.getItem("users"));
-  if (!users[user]) return;
+  const users = JSON.parse(localStorage.getItem("users")) || {};
+  if (!users[username]) return;
 
-  if (!users[user].mistakes.includes(word)) {
-    users[user].mistakes.push(word);
+  if (!users[username].mistakes.includes(word)) {
+    users[username].mistakes.push(word);
     localStorage.setItem("users", JSON.stringify(users));
   }
 }
@@ -163,10 +152,11 @@ function resetInfo() {
   input.value = "";
   feedback.textContent = "";
 }
-const endTime = Date.now();
-const sessionMinutes = Math.floor((endTime - startTime) / 60000);
 
-let totalTime = parseInt(localStorage.getItem("timePlayed")) || 0;
-totalTime += sessionMinutes;
-
-localStorage.setItem("timePlayed", totalTime + "m");
+// === Track Time Played
+window.addEventListener("beforeunload", () => {
+  const endTime = Date.now();
+  const sessionMinutes = Math.floor((endTime - startTime) / 60000);
+  const updatedTime = totalTime + sessionMinutes;
+  localStorage.setItem("timePlayed", updatedTime + "m");
+});

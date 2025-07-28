@@ -1,16 +1,16 @@
 const username = localStorage.getItem("username");
-if (!username) window.location.href = "../index.html"; // Ensure only logged-in users play
+if (!username) window.location.href = "../index.html";
+
 let correctCount = 0;
 let totalAttempts = 0;
 let streak = parseInt(localStorage.getItem("streak")) || 0;
+let totalTime = parseInt(localStorage.getItem("timePlayed")) || 0;
 let startTime = Date.now();
 
 let mistakeWords = [];
 let currentWord = null;
 let currentIndex = 0;
-const user = localStorage.getItem("username");
 
-// DOM Elements
 const heading = document.getElementById("word-heading");
 const meaningBox = document.getElementById("word-meaning");
 const posBox = document.getElementById("word-pos");
@@ -27,11 +27,7 @@ document.getElementById("remove-btn").addEventListener("click", removeWord);
 document.getElementById("logout-btn").addEventListener("click", logout);
 
 // Init
-if (!user) {
-  window.location.href = "../Homepage/index.html";
-} else {
-  loadMistakeWords();
-}
+loadMistakeWords();
 
 function logout() {
   localStorage.removeItem("username");
@@ -40,13 +36,16 @@ function logout() {
 
 function loadMistakeWords() {
   const users = JSON.parse(localStorage.getItem("users"));
-  if (!users[user] || users[user].mistakes.length === 0) {
+  if (!users[username] || users[username].mistakes.length === 0) {
     heading.textContent = "No mistakes to review!";
+    resetInfo();
     return;
   }
 
-  // Filter actual word data
-  mistakeWords = wordList.filter(word => users[user].mistakes.includes(word.word));
+  mistakeWords = wordList.filter(word =>
+    users[username].mistakes.includes(word.word)
+  );
+
   currentIndex = 0;
   loadCurrentWord();
 }
@@ -56,13 +55,11 @@ function loadCurrentWord() {
   heading.textContent = "Spell the word!";
   input.value = "";
   feedback.textContent = "";
-
   meaningBox.textContent = currentWord.meaning;
   posBox.textContent = currentWord.partOfSpeech;
 }
 
 function checkAnswer() {
-  
   const userInput = input.value.trim().toLowerCase();
   const correct = currentWord.word.toLowerCase();
 
@@ -72,41 +69,32 @@ function checkAnswer() {
     return;
   }
 
-  if (userInput === correct) {
+  const isCorrect = userInput === correct;
+
+  totalAttempts++;
+  if (isCorrect) {
+    correctCount++;
+    streak++;
     feedback.textContent = "✅ Correct!";
     feedback.style.color = "#10b981";
     saveScore();
   } else {
+    streak = 0;
     feedback.textContent = "❌ Incorrect!";
     feedback.style.color = "#ef4444";
   }
-  // Replace these conditions with your real logic
-const isCorrect = userInput.toLowerCase() === correctAnswer.toLowerCase();
 
-totalAttempts++;
-if (isCorrect) {
-  correctCount++;
-  streak++;
-} else {
-  streak = 0;
-}
-
-// Save updated streak
-localStorage.setItem("streak", streak);
-
-// Update accuracy
-const accuracy = Math.round((correctCount / totalAttempts) * 100);
-localStorage.setItem("accuracy", accuracy + "%");
-
+  // Save stats
+  localStorage.setItem("streak", streak);
+  const accuracy = Math.round((correctCount / totalAttempts) * 100);
+  localStorage.setItem("accuracy", accuracy + "%");
 }
 
 function nextWord() {
   feedback.textContent = "";
   input.value = "";
 
-  currentIndex++;
-  if (currentIndex >= mistakeWords.length) currentIndex = 0;
-
+  currentIndex = (currentIndex + 1) % mistakeWords.length;
   loadCurrentWord();
 }
 
@@ -128,39 +116,44 @@ function playWord() {
 
 function removeWord() {
   const users = JSON.parse(localStorage.getItem("users"));
-  if (!users[user]) return;
+  if (!users[username]) return;
 
-  const indexInMistakes = users[user].mistakes.indexOf(currentWord.word);
-  if (indexInMistakes > -1) {
-    users[user].mistakes.splice(indexInMistakes, 1);
+  const index = users[username].mistakes.indexOf(currentWord.word);
+  if (index !== -1) {
+    users[username].mistakes.splice(index, 1);
     localStorage.setItem("users", JSON.stringify(users));
   }
 
   mistakeWords.splice(currentIndex, 1);
   if (mistakeWords.length === 0) {
     heading.textContent = "🎉 All mistakes reviewed!";
-    meaningBox.textContent = "---";
-    posBox.textContent = "---";
-    input.value = "";
-    feedback.textContent = "";
+    resetInfo();
     return;
   }
 
-  if (currentIndex >= mistakeWords.length) currentIndex = 0;
+  currentIndex = currentIndex % mistakeWords.length;
   loadCurrentWord();
 }
 
 function saveScore() {
   const users = JSON.parse(localStorage.getItem("users"));
-  if (!users[user]) return;
+  if (!users[username]) return;
 
-  users[user].scores.review += 1;
+  users[username].scores.review += 1;
   localStorage.setItem("users", JSON.stringify(users));
 }
-const endTime = Date.now();
-const sessionMinutes = Math.floor((endTime - startTime) / 60000);
 
-let totalTime = parseInt(localStorage.getItem("timePlayed")) || 0;
-totalTime += sessionMinutes;
+function resetInfo() {
+  meaningBox.textContent = "---";
+  posBox.textContent = "---";
+  input.value = "";
+  feedback.textContent = "";
+}
 
-localStorage.setItem("timePlayed", totalTime + "m");
+// ✅ Save time played when user leaves
+window.addEventListener("beforeunload", () => {
+  const endTime = Date.now();
+  const sessionMinutes = Math.floor((endTime - startTime) / 60000);
+  const updatedTime = totalTime + sessionMinutes;
+  localStorage.setItem("timePlayed", updatedTime + "m");
+});
