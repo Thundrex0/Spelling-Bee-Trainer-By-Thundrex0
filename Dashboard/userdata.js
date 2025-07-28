@@ -24,7 +24,7 @@ if (profileIcon && dropdownStats) {
 // Inject stats
 if (dropdownStats) {
   dropdownStats.innerHTML = `
-    <p><strong>${username}</strong></p>
+    <p><strong>${currentUser}</strong></p>
     <hr>
     <p>🔥 Streak: ${streak}</p>
     <p>🎯 Accuracy: ${accuracy}</p>
