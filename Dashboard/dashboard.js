@@ -2,17 +2,16 @@
 const username = localStorage.getItem("username") || "User";
 document.getElementById("username").textContent = username;
 
-
 // ✅ Redirect buttons to correct mode pages
 const modeButtons = {
-  "Random Mode": "../Random Mode/",
-  "Section A-Z": "../Section Mode/",
-  "Review Mistakes": "../Review Mode/",
-  "Streak Mode": "../Streak Mode/",
+  "Random Mode": "../Random/index.html",
+  "Section A-Z": "../Section/index.html",
+  "Review Mistakes": "../Review/index.html",
+  "Streak Mode": "../Streak/index.html",
   "Random Leaderboard": "../Leaderboards/random.html",
-  "Section Leaderboard": "../Leaderboards/section.html",
-  "Review Leaderboard": "../Leaderboards/review.html",
-  "Streak Leaderboard": "../Leaderboards/review.html"
+  "Section A-Z Leaderboard": "../Leaderboards/random.html",
+  "Review Leaderboard": "../Leaderboards/random.html",
+  "Streak Leaderboard": "../Leaderboards/random.html"
 };
 
 
