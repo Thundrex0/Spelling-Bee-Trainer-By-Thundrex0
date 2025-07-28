@@ -1,5 +1,5 @@
 // Get elements
-const usernameSpan = document.getElementById("username");
+const usernameSpan = document.getElementById("currentUser");
 const dropdownStats = document.getElementById("dropdown-stats");
 const profileIcon = document.querySelector(".profile-icon");
 
