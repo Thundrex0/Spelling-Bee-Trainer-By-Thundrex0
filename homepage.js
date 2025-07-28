@@ -1,6 +1,5 @@
-// 🔐 REGISTER NEW USER
 function register() {
-  const username = document.getElementById("username").value.trim().toLowerCase();
+  const username = document.getElementById("usernameInput").value.trim().toLowerCase();
   const pin = document.getElementById("pin").value.trim();
   const message = document.getElementById("message");
 
@@ -10,8 +9,7 @@ function register() {
     return;
   }
 
-  // Get current user list from localStorage
-  let users = JSON.parse(localStorage.getItem("users")) || {};
+  const users = JSON.parse(localStorage.getItem("users")) || {};
 
   if (users[username]) {
     message.textContent = "Username already exists. Try logging in.";
@@ -19,9 +17,8 @@ function register() {
     return;
   }
 
-  // Create new user
   users[username] = {
-    pin: pin,
+    pin,
     scores: {
       random: 0,
       section: 0,
@@ -32,23 +29,27 @@ function register() {
   };
 
   localStorage.setItem("users", JSON.stringify(users));
-  localStorage.setItem("username", username);
+  localStorage.setItem("username", username); // current session user
+
+  // Default stats if not already saved
+  if (!localStorage.getItem("accuracy")) localStorage.setItem("accuracy", "0%");
+  if (!localStorage.getItem("streak")) localStorage.setItem("streak", "0");
+  if (!localStorage.getItem("timePlayed")) localStorage.setItem("timePlayed", "0h");
 
   message.textContent = `Welcome, ${username}! Redirecting...`;
   message.className = "message success";
 
   setTimeout(() => {
-    window.location.href =  "https://thundrex0.github.io/Spelling-Bee-Trainer-By-Thundrex0/Dashboard/";
+    window.location.href = "https://thundrex0.github.io/Spelling-Bee-Trainer-By-Thundrex0/Dashboard/";
   }, 1000);
 }
 
-// 🔓 LOGIN EXISTING USER
 function login() {
-  const username = document.getElementById("username").value.trim().toLowerCase();
+  const username = document.getElementById("usernameInput").value.trim().toLowerCase();
   const pin = document.getElementById("pin").value.trim();
   const message = document.getElementById("message");
 
-  let users = JSON.parse(localStorage.getItem("users")) || {};
+  const users = JSON.parse(localStorage.getItem("users")) || {};
 
   if (!users[username]) {
     message.textContent = "User not found. Please register first.";
@@ -62,19 +63,12 @@ function login() {
     return;
   }
 
-  localStorage.setItem("username", username);
+  localStorage.setItem("username", username); // session user
 
   message.textContent = `Welcome back, ${username}! Redirecting...`;
   message.className = "message success";
 
   setTimeout(() => {
-    window.location.href =  "https://thundrex0.github.io/Spelling-Bee-Trainer-By-Thundrex0/Dashboard/";
+    window.location.href = "https://thundrex0.github.io/Spelling-Bee-Trainer-By-Thundrex0/Dashboard/";
   }, 1000);
 }
-const username = document.getElementById("usernameInput").value;
-localStorage.setItem("currentUser", username);
-
-// Only set if not already present:
-if (!localStorage.getItem("accuracy")) localStorage.setItem("accuracy", "0");
-if (!localStorage.getItem("streak")) localStorage.setItem("streak", "0");
-if (!localStorage.getItem("timePlayed")) localStorage.setItem("timePlayed", "0");
