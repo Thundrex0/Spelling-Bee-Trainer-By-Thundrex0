@@ -1,3 +1,10 @@
+const username = localStorage.getItem("username");
+if (!username) window.location.href = "../index.html"; // Ensure only logged-in users play
+let correctCount = 0;
+let totalAttempts = 0;
+let streak = parseInt(localStorage.getItem("streak")) || 0;
+let startTime = Date.now();
+
 let mistakeWords = [];
 let currentWord = null;
 let currentIndex = 0;
@@ -55,6 +62,7 @@ function loadCurrentWord() {
 }
 
 function checkAnswer() {
+  
   const userInput = input.value.trim().toLowerCase();
   const correct = currentWord.word.toLowerCase();
 
@@ -72,6 +80,24 @@ function checkAnswer() {
     feedback.textContent = "❌ Incorrect!";
     feedback.style.color = "#ef4444";
   }
+  // Replace these conditions with your real logic
+const isCorrect = userInput.toLowerCase() === correctAnswer.toLowerCase();
+
+totalAttempts++;
+if (isCorrect) {
+  correctCount++;
+  streak++;
+} else {
+  streak = 0;
+}
+
+// Save updated streak
+localStorage.setItem("streak", streak);
+
+// Update accuracy
+const accuracy = Math.round((correctCount / totalAttempts) * 100);
+localStorage.setItem("accuracy", accuracy + "%");
+
 }
 
 function nextWord() {
@@ -131,3 +157,10 @@ function saveScore() {
   users[user].scores.review += 1;
   localStorage.setItem("users", JSON.stringify(users));
 }
+const endTime = Date.now();
+const sessionMinutes = Math.floor((endTime - startTime) / 60000);
+
+let totalTime = parseInt(localStorage.getItem("timePlayed")) || 0;
+totalTime += sessionMinutes;
+
+localStorage.setItem("timePlayed", totalTime + "m");

@@ -1,3 +1,10 @@
+const username = localStorage.getItem("username");
+if (!username) window.location.href = "../index.html"; // Ensure only logged-in users play
+let correctCount = 0;
+let totalAttempts = 0;
+let streak = parseInt(localStorage.getItem("streak")) || 0;
+let startTime = Date.now();
+
 // Utility function to format date as YYYY-MM-DD
 function getTodayDate() {
   const today = new Date();
@@ -60,3 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
   displayStreakData(streakData);
   loadUsername();
 });
+const endTime = Date.now();
+const sessionMinutes = Math.floor((endTime - startTime) / 60000);
+
+let totalTime = parseInt(localStorage.getItem("timePlayed")) || 0;
+totalTime += sessionMinutes;
+
+localStorage.setItem("timePlayed", totalTime + "m");

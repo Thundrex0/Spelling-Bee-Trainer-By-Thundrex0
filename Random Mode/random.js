@@ -1,3 +1,10 @@
+const username = localStorage.getItem("username");
+if (!username) window.location.href = "../index.html"; // Ensure only logged-in users play
+let correctCount = 0;
+let totalAttempts = 0;
+let streak = parseInt(localStorage.getItem("streak")) || 0;
+let startTime = Date.now();
+
 // === GLOBAL VARIABLES ===
 let currentWord = null;
 let currentIndex = null;
@@ -68,6 +75,24 @@ function checkAnswer() {
     feedback.style.color = "#ef4444";
     saveMistake(currentWord.word);
   }
+  // Replace these conditions with your real logic
+const isCorrect = userInput.toLowerCase() === correctAnswer.toLowerCase();
+
+totalAttempts++;
+if (isCorrect) {
+  correctCount++;
+  streak++;
+} else {
+  streak = 0;
+}
+
+// Save updated streak
+localStorage.setItem("streak", streak);
+
+// Update accuracy
+const accuracy = Math.round((correctCount / totalAttempts) * 100);
+localStorage.setItem("accuracy", accuracy + "%");
+
 }
 
 function retryWord() {
@@ -105,3 +130,10 @@ function saveMistake(word) {
     localStorage.setItem("users", JSON.stringify(users));
   }
 }
+const endTime = Date.now();
+const sessionMinutes = Math.floor((endTime - startTime) / 60000);
+
+let totalTime = parseInt(localStorage.getItem("timePlayed")) || 0;
+totalTime += sessionMinutes;
+
+localStorage.setItem("timePlayed", totalTime + "m");
