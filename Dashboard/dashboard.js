@@ -5,7 +5,7 @@ document.getElementById("username").textContent = username;
 // ✅ Redirect buttons to correct mode pages
 const modeButtons = {
   "Random Mode": "../Random Mode/index.html",
-  "Section A-Z": "../Section A-Z/index.html",
+  "Section A-Z": "../Section Mode/index.html",
   "Review Mistakes": "../Review Mistakes/index.html",
   "Streak Mode": "../Streak Mode/index.html",
   "Random Leaderboard": "../Leaderboards/random.html",
