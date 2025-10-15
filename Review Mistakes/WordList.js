@@ -72,12 +72,7 @@ const wordList = [
     "meaning": "To accept or act in accordance with",
     "sentence": "You must abide by the rules of the school."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Abject",
     "partOfSpeech": "Adjective",
@@ -150,12 +145,7 @@ const wordList = [
     "meaning": "On the subject of; concerning; regarding.",
     "sentence": "We talked about our plans for the upcoming weekend."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Above",
     "partOfSpeech": "Preposition",
@@ -228,12 +218,7 @@ const wordList = [
     "meaning": "To restrain oneself from doing or enjoying something",
     "sentence": "He decided to abstain from smoking for health reasons."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Abstention",
     "partOfSpeech": "Noun",
@@ -306,12 +291,7 @@ const wordList = [
     "meaning": "A distinctive way of pronouncing a language, often associated with a particular region or group.",
     "sentence": "Her accent revealed her upbringing in the southern United States."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Accentuate",
     "partOfSpeech": "Verb",
@@ -384,12 +364,7 @@ const wordList = [
     "meaning": "To approach and address boldly or aggressively",
     "sentence": "He was accosted by a stranger asking for money."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Account",
     "partOfSpeech": "Noun",
@@ -462,12 +437,7 @@ const wordList = [
     "meaning": "The highest point or peak",
     "sentence": "Her career reached its acme when she won the Nobel Prize."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Acquaint",
     "partOfSpeech": "Verb",
@@ -540,12 +510,7 @@ const wordList = [
     "meaning": "The fact or process of doing something; an act or deed.",
     "sentence": "The action in the movie kept everyone on the edge of their seats."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Activate",
     "partOfSpeech": "Verb",
@@ -618,12 +583,7 @@ const wordList = [
     "meaning": "The process of adding something to something else; an increase.",
     "sentence": "The addition of new features to the software improved its functionality."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Additional",
     "partOfSpeech": "Adjective",
@@ -696,12 +656,7 @@ const wordList = [
     "meaning": "An African and Asian monkey with a long\nface like a dog\u2019s.",
     "sentence": "The baboon sat on the tree branch, observing its surroundings."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Baccalaureate",
     "partOfSpeech": "Noun",
@@ -774,12 +729,7 @@ const wordList = [
     "meaning": "A highly technical form of dance with its own vocabulary.",
     "sentence": "The ballet performance captivated the audience with its grace and artistry."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Balloon",
     "partOfSpeech": "Noun",
@@ -852,12 +802,7 @@ const wordList = [
     "meaning": "A poet, often one who recites epic and heroic poems.",
     "sentence": "The bard entertained the audience with tales of ancient heroes."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Bardic",
     "partOfSpeech": "Adjective",
@@ -930,12 +875,7 @@ const wordList = [
     "meaning": "The lowest floor of a building, typically below ground level.",
     "sentence": "They converted their basement into a home office."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Bashful",
     "partOfSpeech": "Adjective",
@@ -1008,12 +948,7 @@ const wordList = [
     "meaning": "To become friends with someone; to act as a friend to.",
     "sentence": "She decided to befriend the shy new student in her class."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Befriending",
     "partOfSpeech": "Verb",
@@ -1086,12 +1021,7 @@ const wordList = [
     "meaning": "To give a false impression of something.",
     "sentence": "Her calm demeanor belied the anxiety she felt inside."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Bellicose",
     "partOfSpeech": "Adjective",
@@ -1164,12 +1094,7 @@ const wordList = [
     "meaning": "In a manner that shows kindness and goodwill.",
     "sentence": "She looked at the children benevolently, wishing to help them."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Bequeath",
     "partOfSpeech": "Verb",
@@ -1242,12 +1167,7 @@ const wordList = [
     "meaning": "Causing perplexity or confusion.",
     "sentence": "The maze was bewildering, and many participants got lost."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Bewilderment",
     "partOfSpeech": "Noun",
@@ -1320,12 +1240,7 @@ const wordList = [
     "meaning": "A shellfish with a hinged shell.",
     "sentence": "The cockle is an example of a bivalve sold as food at seaside resorts in England."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Bivouac",
     "partOfSpeech": "Noun/Verb",
@@ -1398,12 +1313,7 @@ const wordList = [
     "meaning": "To determine (the amount or number of something) mathematically.",
     "sentence": "We need to calculate the total cost of the project before proceeding."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Calculus",
     "partOfSpeech": "Noun",
@@ -1476,12 +1386,7 @@ const wordList = [
     "meaning": "To surrender unconditionally.",
     "sentence": "The besieged city had no choice but to capitulate."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Caprice",
     "partOfSpeech": "Noun",
@@ -1554,12 +1459,7 @@ const wordList = [
     "meaning": "A meeting of the members of a political party to make decisions.",
     "sentence": "The caucus will meet to decide on the party's candidate for the election."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Caustic",
     "partOfSpeech": "Adjective",
@@ -1632,12 +1532,7 @@ const wordList = [
     "meaning": "To scold or rebuke.",
     "sentence": "She chided him for being late to the meeting."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Chimera",
     "partOfSpeech": "noun",
@@ -1710,12 +1605,7 @@ const wordList = [
     "meaning": "A person who claims to have a supernatural ability to perceive events in the future or beyond normal sensory contact.",
     "sentence": "The clairvoyant claimed she could predict the outcomes of major events."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Clamor",
     "partOfSpeech": "Noun",
@@ -1788,12 +1678,7 @@ const wordList = [
     "meaning": "To persuade an unwilling person to do something by using force or threats.",
     "sentence": "He was coerced into signing the agreement under duress."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Cognizance",
     "partOfSpeech": "Noun",
@@ -1866,12 +1751,7 @@ const wordList = [
     "meaning": "Shared by all members of a community; for common use.",
     "sentence": "The communal garden was enjoyed by all the residents of the apartment complex."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Commune",
     "partOfSpeech": "verb",
@@ -1944,12 +1824,7 @@ const wordList = [
     "meaning": "To admit that something is true or valid after first denying or resisting it.",
     "sentence": "He had to concede that his opponent had made a valid point."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Conceited",
     "partOfSpeech": "Adjective",
@@ -2022,12 +1897,7 @@ const wordList = [
     "meaning": "A sweet dish or delicacy.",
     "sentence": "She enjoyed making homemade confections for special occasions."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Confide",
     "partOfSpeech": "verb",
@@ -2100,12 +1970,7 @@ const wordList = [
     "meaning": "To waste time or be slow.",
     "sentence": "Don\u2019t dawdle; we need to leave now."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Dazzle",
     "partOfSpeech": "Verb",
@@ -2178,12 +2043,7 @@ const wordList = [
     "meaning": "Misleading or intended to deceive.",
     "sentence": "The seemingly calm surface of the water was deceptive."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Decide",
     "partOfSpeech": "Verb",
@@ -2256,12 +2116,7 @@ const wordList = [
     "meaning": "The process of reasoning from general principles to specific cases; also, a subtraction or reduction.",
     "sentence": "Her tax return included a deduction for charitable donations."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Deface",
     "partOfSpeech": "Verb",
@@ -2334,12 +2189,7 @@ const wordList = [
     "meaning": "To cause something to change direction; to divert.",
     "sentence": "He tried to deflect the criticism with a clever remark."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Defraud",
     "partOfSpeech": "Verb",
@@ -2412,12 +2262,7 @@ const wordList = [
     "meaning": "A feeling of great pleasure or satisfaction.",
     "sentence": "Her success was a source of great delight."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Delightful",
     "partOfSpeech": "Adjective",
@@ -2490,12 +2335,7 @@ const wordList = [
     "meaning": "To catch sight of or to detect something.",
     "sentence": "She could just descry the outline of the mountain in the distance."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Desist",
     "partOfSpeech": "Verb",
@@ -2568,12 +2408,7 @@ const wordList = [
     "meaning": "To cause something to fall into disrepair through neglect.",
     "sentence": "The old building was dilapidated and in need of restoration."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Dilapidated",
     "partOfSpeech": "Adjective",
@@ -2646,12 +2481,7 @@ const wordList = [
     "meaning": "To perceive or recognize something clearly.",
     "sentence": "He could discern a hint of sadness in her eyes."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Discomfit",
     "partOfSpeech": "Verb",
@@ -2724,12 +2554,7 @@ const wordList = [
     "meaning": "Having a strong desire or enthusiasm for something.",
     "sentence": "She was eager to start her new job after graduation."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Ebullience",
     "partOfSpeech": "Noun",
@@ -2802,12 +2627,7 @@ const wordList = [
     "meaning": "Effective; capable of producing the desired result.",
     "sentence": "The new medication was found to be highly efficacious in treating the illness."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Efficacy",
     "partOfSpeech": "Noun",
@@ -2880,12 +2700,7 @@ const wordList = [
     "meaning": "To make something clear; to explain.",
     "sentence": "The professor took time to elucidate the complex theory for the students."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Elusive",
     "partOfSpeech": "Adjective",
@@ -2958,12 +2773,7 @@ const wordList = [
     "meaning": "A person sent on a special mission, usually as a diplomatic representative.",
     "sentence": "The president sent an emissary to negotiate peace between the two nations."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Empathetic",
     "partOfSpeech": "Adjective",
@@ -3036,12 +2846,7 @@ const wordList = [
     "meaning": "To provide with a quality, ability, or asset; to give or bequeath an income or property to a person or institution.",
     "sentence": "She was endowed with a remarkable talent for music from a young age."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Enervate",
     "partOfSpeech": "Verb",
@@ -3114,12 +2919,7 @@ const wordList = [
     "meaning": "To cause something to become twisted or caught in something.",
     "sentence": "The kite\u2019s string became entangled in the\ntree branches."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Enthral",
     "partOfSpeech": "Verb",
@@ -3192,12 +2992,7 @@ const wordList = [
     "meaning": "A moment of sudden revelation or insight.",
     "sentence": "She had an epiphany about her career path during her vacation."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Epitaph",
     "partOfSpeech": "Noun",
@@ -3270,12 +3065,7 @@ const wordList = [
     "meaning": "Having or showing great knowledge or learning.",
     "sentence": "The professor\u2019s erudite lecture on ancient\nphilosophy captivated the audience."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Erudition",
     "partOfSpeech": "Noun",
@@ -3348,12 +3138,7 @@ const wordList = [
     "meaning": "To bring or recall a feeling, memory, or image to the conscious mind.",
     "sentence": "The old photograph evoked memories of her childhood."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Evolve",
     "partOfSpeech": "Verb",
@@ -3426,12 +3211,7 @@ const wordList = [
     "meaning": "Cloth produced by weaving or knitting textile fibers",
     "sentence": "The fabric of the dress was soft and luxurious."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Fabricate",
     "partOfSpeech": "Verb",
@@ -3504,12 +3284,7 @@ const wordList = [
     "meaning": "Lacking strength or clarity; barely perceptible",
     "sentence": "Her faint smile showed her appreciation."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Faint-hearted",
     "partOfSpeech": "Adjective",
@@ -3582,12 +3357,7 @@ const wordList = [
     "meaning": "Overly imaginative and unrealistic",
     "sentence": "The fanciful story was filled with magical creatures."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Fancy",
     "partOfSpeech": "Adjective",
@@ -3660,12 +3430,7 @@ const wordList = [
     "meaning": "Having significant consequences or implications",
     "sentence": "The fateful decision changed the course of history."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Fathom",
     "partOfSpeech": "Verb",
@@ -3738,12 +3503,7 @@ const wordList = [
     "meaning": "Relating to a system of government",
     "sentence": "The federal law applies to all states."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Feeble",
     "partOfSpeech": "Adjective",
@@ -3816,12 +3576,7 @@ const wordList = [
     "meaning": "Savagely fierce, cruel, or violent",
     "sentence": "The ferocious lion roared loudly in the jungle."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Fertile",
     "partOfSpeech": "Adjective",
@@ -3894,12 +3649,7 @@ const wordList = [
     "meaning": "Literature that describes imaginary events and people",
     "sentence": "She loves reading science fiction novels."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Fidelity",
     "partOfSpeech": "Noun",
@@ -3972,12 +3722,7 @@ const wordList = [
     "meaning": "A device used to remove impurities or particles",
     "sentence": "The water filter needs to be replaced."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Filthy",
     "partOfSpeech": "Adjective",
@@ -4050,12 +3795,7 @@ const wordList = [
     "meaning": "A person who is passionate about a particular cause and who campaigns vigorously for it",
     "sentence": "The activist was a firebrand in the fight for environmental issues."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Fireproof",
     "partOfSpeech": "Adjective",
@@ -4128,12 +3868,7 @@ const wordList = [
     "meaning": "To talk rapidly and unintelligibly.",
     "sentence": "The children gabbled excitedly about their plans for the summer."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Gadget",
     "partOfSpeech": "Noun",
@@ -4206,12 +3941,7 @@ const wordList = [
     "meaning": "The complete range or extent of something.",
     "sentence": "The play covers the gamut of human emotions, from joy to despair."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Gape",
     "partOfSpeech": "Verb",
@@ -4284,12 +4014,7 @@ const wordList = [
     "meaning": "Relevant and appropriate; fitting.",
     "sentence": "Her comments were not germane to the discussion about project deadlines."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Germinate",
     "partOfSpeech": "Verb",
@@ -4362,12 +4087,7 @@ const wordList = [
     "meaning": "A faint or wavering light; a small sign or hint.",
     "sentence": "A glimmer of hope shone through the otherwise bleak situation."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Glimmering",
     "partOfSpeech": "Adjective",
@@ -4440,12 +4160,7 @@ const wordList = [
     "meaning": "Involving or showing violence and bloodshed; gruesome.",
     "sentence": "The movie was too gory for her taste, with scenes of intense violence."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Gossamer",
     "partOfSpeech": "Noun/Adjective",
@@ -4518,12 +4233,7 @@ const wordList = [
     "meaning": "Serious; dignified; or important; also, a burial place.",
     "sentence": "The discussion turned grave when they addressed the potential impacts of the new policy."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Gravitate",
     "partOfSpeech": "Verb",
@@ -4596,12 +4306,7 @@ const wordList = [
     "meaning": "Small particles of stone or sand; courage and resolve.",
     "sentence": "Her grit and determination were evident as she pushed through the tough training."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Gritty",
     "partOfSpeech": "Adjective",
@@ -4674,12 +4379,7 @@ const wordList = [
     "meaning": "Shrewd or spirited initiative and resourcefulness.",
     "sentence": "It took a lot of gumption for him to start his own business from scratch."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Gust",
     "partOfSpeech": "Noun",
@@ -4752,12 +4452,7 @@ const wordList = [
     "meaning": "A unit of heredity that is transferred from a parent to offspring.",
     "sentence": "Scientists are studying the gene responsible for the trait."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Generic",
     "partOfSpeech": "Adjective",
@@ -4830,12 +4525,7 @@ const wordList = [
     "meaning": "The way in which hair is cut and styled.",
     "sentence": "\"She changed her hairstyle for the summer.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Halfway",
     "partOfSpeech": "Adverb/Adjective",
@@ -4908,12 +4598,7 @@ const wordList = [
     "meaning": "A reference book providing specific information or instructions.",
     "sentence": "\"The manual served as a handbook for employees to understand company policies.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Handcuff",
     "partOfSpeech": "Noun/Verb",
@@ -4986,12 +4671,7 @@ const wordList = [
     "meaning": "The central or most important area of a country or region.",
     "sentence": "\"The heartland of the country is known for its agriculture and wide-open spaces.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Hap",
     "partOfSpeech": "Noun",
@@ -5064,12 +4744,7 @@ const wordList = [
     "meaning": "Diligent and dedicated in work.",
     "sentence": "\"She is known for her hardworking nature and commitment to her job.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Harm",
     "partOfSpeech": "Verb/Noun",
@@ -5142,12 +4817,7 @@ const wordList = [
     "meaning": "A long spear-like weapon used for hunting large fish or whales; or to catch with a harpoon.",
     "sentence": "\"The fisherman used a harpoon to catch the large fish.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Harrow",
     "partOfSpeech": "Noun/Verb",
@@ -5220,12 +4890,7 @@ const wordList = [
     "meaning": "A place for breeding and raising young animals, especially fish or poultry.",
     "sentence": "\"The hatchery was busy with the new batch of baby fish.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Hatchet",
     "partOfSpeech": "Noun",
@@ -5298,12 +4963,7 @@ const wordList = [
     "meaning": "A pipe with a valve used to access water for firefighting.",
     "sentence": "\"The fire truck connected to the hydrant to get water for the blaze.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Hazelnut",
     "partOfSpeech": "Noun",
@@ -5376,12 +5036,7 @@ const wordList = [
     "meaning": "The principal or leader of a school.",
     "sentence": "\"The headmaster gave an inspiring speech at the graduation ceremony.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Headphone",
     "partOfSpeech": "Noun",
@@ -5454,12 +5109,7 @@ const wordList = [
     "meaning": "Not honorable in character or purpose; of lowly origin.",
     "sentence": "The politician\u2019s ignoble actions damaged his\nreputation beyond repair."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Ignominious",
     "partOfSpeech": "Adjective",
@@ -5532,12 +5182,7 @@ const wordList = [
     "meaning": "To move to a foreign country for the purpose of permanent residence.",
     "sentence": "Many families immigrate to find better opportunities abroad."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Imminent",
     "partOfSpeech": "Adjective",
@@ -5610,12 +5255,7 @@ const wordList = [
     "meaning": "To drive or urge someone to take action.",
     "sentence": "The urgency of the situation impelled him to act quickly."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Impenitent",
     "partOfSpeech": "Adjective",
@@ -5688,12 +5328,7 @@ const wordList = [
     "meaning": "Lacking power or ability; ineffective.",
     "sentence": "His attempts to influence the decision were ultimately impotent."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Impromptu",
     "partOfSpeech": "Adjective",
@@ -5766,12 +5401,7 @@ const wordList = [
     "meaning": "The use of spoken words or phrases, often magical or ritualistic, to produce a desired effect.",
     "sentence": "The sorcerer performed an incantation to summon the spirits."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Incendiary",
     "partOfSpeech": "Adjective",
@@ -5844,12 +5474,7 @@ const wordList = [
     "meaning": "Difficult to believe; extraordinary.",
     "sentence": "The athlete\u2019s recovery from injury was\nnothing short of incredible."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Incredulous",
     "partOfSpeech": "Adjective",
@@ -5922,12 +5547,7 @@ const wordList = [
     "meaning": "Absolutely necessary; essential.",
     "sentence": "A good internet connection is indispensable for remote work."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Indulge",
     "partOfSpeech": "Verb",
@@ -6000,12 +5620,7 @@ const wordList = [
     "meaning": "To deduce or conclude information from evidence and reasoning rather than from explicit statements.",
     "sentence": "From the evidence, we can infer that the company is in financial trouble."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Infiltrate",
     "partOfSpeech": "Verb",
@@ -6078,12 +5693,7 @@ const wordList = [
     "meaning": "So good or unusual as to be impossible to copy; unique.",
     "sentence": "Her style was inimitable, setting her apart from other designers."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Initiate",
     "partOfSpeech": "Verb",
@@ -6156,12 +5766,7 @@ const wordList = [
     "meaning": "The state of being jaded; weariness or disillusionment.",
     "sentence": "Her jadedness was evident in her reluctance to try new experiences."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Jagged",
     "partOfSpeech": "Adjective",
@@ -6234,12 +5839,7 @@ const wordList = [
     "meaning": "To make rude and mocking remarks.",
     "sentence": "The players were met with jeers from the opposing fans."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Jeering",
     "partOfSpeech": "Verb",
@@ -6312,12 +5912,7 @@ const wordList = [
     "meaning": "A very short period of time; an instant.",
     "sentence": "I\u2019ll be back in a jiffy with the information you\nrequested."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Jigsaw",
     "partOfSpeech": "Noun",
@@ -6390,12 +5985,7 @@ const wordList = [
     "meaning": "Cheerful and lighthearted.",
     "sentence": "The jocund music at the party lifted everyone's spirits."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Jolly",
     "partOfSpeech": "Adjective",
@@ -6468,12 +6058,7 @@ const wordList = [
     "meaning": "To show or feel great joy; rejoice.",
     "sentence": "They jubilated over the news of their promotion."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Jubilation",
     "partOfSpeech": "Noun",
@@ -6546,12 +6131,7 @@ const wordList = [
     "meaning": "To mix things together in a confused or untidy way; a confused mixture.",
     "sentence": "Her desk was a jumble of papers and office supplies."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Junction",
     "partOfSpeech": "Noun",
@@ -6624,12 +6204,7 @@ const wordList = [
     "meaning": "A musical instrument with metal keys on a wooden board",
     "sentence": "She played a soothing melody on her kalimba."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Kangaroo",
     "partOfSpeech": "Noun",
@@ -6702,12 +6277,7 @@ const wordList = [
     "meaning": "Sharp or enthusiastic",
     "sentence": "She has a keen interest in classical music."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Keenly",
     "partOfSpeech": "Adverb",
@@ -6780,12 +6350,7 @@ const wordList = [
     "meaning": "A flammable liquid used as fuel or solvent",
     "sentence": "They used kerosene lamps during the power outage."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Ketch",
     "partOfSpeech": "Noun",
@@ -6858,12 +6423,7 @@ const wordList = [
     "meaning": "A communal settlement in Israel, typically a farm.",
     "sentence": "She spent a summer volunteering on a kibbutz in Israel."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Kibitz",
     "partOfSpeech": "Verb",
@@ -6936,12 +6496,7 @@ const wordList = [
     "meaning": "(Repeated for variety)",
     "sentence": "The criminals planned to kidnap the diplomat."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Kidnapper",
     "partOfSpeech": "Noun",
@@ -7014,12 +6569,7 @@ const wordList = [
     "meaning": "A traditional Japanese garment.",
     "sentence": "She wore a beautiful silk kimono to the cultural festival."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Kin",
     "partOfSpeech": "Noun",
@@ -7092,12 +6642,7 @@ const wordList = [
     "meaning": "(Repeated for variety)",
     "sentence": "The kinetoscope allowed viewers to watch early films."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Kingdom",
     "partOfSpeech": "Noun",
@@ -7170,12 +6715,7 @@ const wordList = [
     "meaning": "Showing a lack of enthusiasm and determination.",
     "sentence": "His lackadaisical attitude toward the project was evident."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Lackluster",
     "partOfSpeech": "Adjective",
@@ -7248,12 +6788,7 @@ const wordList = [
     "meaning": "Characterized by a lack of energy or vitality.",
     "sentence": "The languorous afternoon made him feel drowsy."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Larceny",
     "partOfSpeech": "Noun",
@@ -7326,12 +6861,7 @@ const wordList = [
     "meaning": "Able to be read or deciphered.",
     "sentence": "The document was clear and legible."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Lethargic",
     "partOfSpeech": "Adjective",
@@ -7404,12 +6934,7 @@ const wordList = [
     "meaning": "Clear and transparent.",
     "sentence": "The limpid water of the lake was soothing to the eyes."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Linear",
     "partOfSpeech": "Adjective",
@@ -7482,12 +7007,7 @@ const wordList = [
     "meaning": "Extremely talkative.",
     "sentence": "The loquacious guest dominated the conversation at dinner."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Lucid",
     "partOfSpeech": "Adjective",
@@ -7560,12 +7080,7 @@ const wordList = [
     "meaning": "Luxuriant and abundant.",
     "sentence": "The garden was filled with lush greenery."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Luster",
     "partOfSpeech": "Noun",
@@ -7638,12 +7153,7 @@ const wordList = [
     "meaning": "Something enclosing a light and protecting it from wind and rain.",
     "sentence": "I could see his face by the light of the lantern."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Lapilli",
     "partOfSpeech": "Noun",
@@ -7716,12 +7226,7 @@ const wordList = [
     "meaning": "A member of a legion, especially the French Foreign Legion.",
     "sentence": "The French legionnaire was renowned for his combat tactics."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "legitimate",
     "partOfSpeech": "adjective",
@@ -7794,12 +7299,7 @@ const wordList = [
     "meaning": "A disease or ailment",
     "sentence": "The sudden onset of the malady worried the doctors."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Malcontent",
     "partOfSpeech": "Noun",
@@ -7872,12 +7372,7 @@ const wordList = [
     "meaning": "To display or show clearly",
     "sentence": "Her talent began to manifest early in her career."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Manifesto",
     "partOfSpeech": "Noun",
@@ -7950,12 +7445,7 @@ const wordList = [
     "meaning": "A large tent used for outdoor events",
     "sentence": "The wedding reception was held under a grand marquee."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Marred",
     "partOfSpeech": "Verb",
@@ -8028,12 +7518,7 @@ const wordList = [
     "meaning": "A system or process for achieving a result",
     "sentence": "The mechanism of the clock was intricate and precise."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Meddle",
     "partOfSpeech": "Verb",
@@ -8106,12 +7591,7 @@ const wordList = [
     "meaning": "To become softer or more relaxed",
     "sentence": "His demeanor mellowed after the argument."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Mellowed",
     "partOfSpeech": "Verb",
@@ -8184,12 +7664,7 @@ const wordList = [
     "meaning": "Unskilled or lowly; not requiring much skill",
     "sentence": "He was tired of doing menial tasks at the office."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Mercenary",
     "partOfSpeech": "Noun",
@@ -8262,12 +7737,7 @@ const wordList = [
     "meaning": "A microscopic organism, especially a bacterium",
     "sentence": "The scientist studied the effects of microbes on the environment."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Microcosm",
     "partOfSpeech": "Noun",
@@ -8340,12 +7810,7 @@ const wordList = [
     "meaning": "Full of joy and laughter",
     "sentence": "The children\u2019s mirthful play brought smiles\nto everyone."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Mirthless",
     "partOfSpeech": "Adjective",
@@ -8418,12 +7883,7 @@ const wordList = [
     "meaning": "A letter or other written message",
     "sentence": "She sent a missive to her friend with the news."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Misstep",
     "partOfSpeech": "Noun",
@@ -8496,12 +7956,7 @@ const wordList = [
     "meaning": "Longing for the past, often with a sense of warmth and sentimentality.",
     "sentence": "The song had a nostalgic feel, reminding her of her childhood."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Nimble",
     "partOfSpeech": "Adjective",
@@ -8574,12 +8029,7 @@ const wordList = [
     "meaning": "Not supporting or helping either side in a conflict.",
     "sentence": "\"The country remained neutral during the conflict.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Name",
     "partOfSpeech": "Noun",
@@ -8652,12 +8102,7 @@ const wordList = [
     "meaning": "Words or ideas that have no meaning or are absurd",
     "sentence": "His explanation was full of nonsense."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Nesting",
     "partOfSpeech": "Noun",
@@ -8730,12 +8175,7 @@ const wordList = [
     "meaning": "A short sleep, especially during the day",
     "sentence": "He took a nap after lunch to refresh himself."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Note",
     "partOfSpeech": "Noun",
@@ -8808,12 +8248,7 @@ const wordList = [
     "meaning": "A long, thin piece of pasta",
     "sentence": "She added noodles to the soup for extra texture."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Narrator",
     "partOfSpeech": "Noun",
@@ -8886,12 +8321,7 @@ const wordList = [
     "meaning": "A piece of cloth worn around the neck, often as part of a suit",
     "sentence": "He adjusted his necktie before the meeting."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Nutritional",
     "partOfSpeech": "Noun",
@@ -8964,12 +8394,7 @@ const wordList = [
     "meaning": "A person authorized to perform certain legal formalities",
     "sentence": "The notary verified the signature on the contract."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Novelty",
     "partOfSpeech": "Noun",
@@ -9042,12 +8467,7 @@ const wordList = [
     "meaning": "The act of suggesting someone for a position or award",
     "sentence": "Her nomination for the award was a pleasant surprise."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Nod",
     "partOfSpeech": "Noun",
@@ -9120,12 +8540,7 @@ const wordList = [
     "meaning": "A thing that can be seen or touched; or to oppose or disapprove of something.",
     "sentence": "\"The sculpture is an object of art; or they objected to the plan.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Obliterate",
     "partOfSpeech": "Verb",
@@ -9198,12 +8613,7 @@ const wordList = [
     "meaning": "A large body of saltwater that covers most of the Earth's surface.",
     "sentence": "\"They sailed across the Atlantic Ocean.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Offend",
     "partOfSpeech": "Verb",
@@ -9276,12 +8686,7 @@ const wordList = [
     "meaning": "The branch of science concerned with the study of light and vision.",
     "sentence": "\"The optics of the new telescope allow for clearer images.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Optimum",
     "partOfSpeech": "Adjective",
@@ -9354,12 +8759,7 @@ const wordList = [
     "meaning": "Unconventional and bizarre.",
     "sentence": "\"The outlandish costume was the highlight of the party.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Outlast",
     "partOfSpeech": "Verb",
@@ -9432,12 +8832,7 @@ const wordList = [
     "meaning": "Expressing strong opinions freely and openly.",
     "sentence": "\"He is known for his outspoken views on social issues.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Outstretch",
     "partOfSpeech": "Verb",
@@ -9510,12 +8905,7 @@ const wordList = [
     "meaning": "To make something more complex than necessary.",
     "sentence": "\"The manual was overcomplicated and hard to follow.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Overeager",
     "partOfSpeech": "Adjective",
@@ -9588,12 +8978,7 @@ const wordList = [
     "meaning": "The excessive consumption or enjoyment of something.",
     "sentence": "\"His overindulgence in sweets was affecting his health.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Overindulgent",
     "partOfSpeech": "Adjective",
@@ -9666,12 +9051,7 @@ const wordList = [
     "meaning": "To go beyond the limits of what is acceptable or permitted.",
     "sentence": "\"She was reprimanded for overstepping her authority.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Overthrow",
     "partOfSpeech": "Verb",
@@ -9744,12 +9124,7 @@ const wordList = [
     "meaning": "A violation or wrongdoing.",
     "sentence": "His action was considered a grave offense."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Omit",
     "partOfSpeech": "Verb",
@@ -9822,12 +9197,7 @@ const wordList = [
     "meaning": "Causing disease.",
     "sentence": "\"The pathogenic bacteria were identified in the lab.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Plaudit",
     "partOfSpeech": "Noun",
@@ -9900,12 +9270,7 @@ const wordList = [
     "meaning": "To forbid, especially by law.",
     "sentence": "\"The new regulations proscribed the use of certain chemicals.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Philanthropist",
     "partOfSpeech": "Noun",
@@ -9978,12 +9343,7 @@ const wordList = [
     "meaning": "Having or showing knowledge of events before they take place.",
     "sentence": "\"His prescient remarks about the market trends proved accurate.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Palatial",
     "partOfSpeech": "Adjective",
@@ -10056,12 +9416,7 @@ const wordList = [
     "meaning": "In a way that is not securely held in place; likely to fall or collapse.",
     "sentence": "\"The stack of boxes was precariously balanced.\""
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Phosphorescent",
     "partOfSpeech": "Adjective",
@@ -10134,12 +9489,7 @@ const wordList = [
     "meaning": "Never ending or changing; occurring repeatedly",
     "sentence": "The perpetual noise from the construction site was annoying."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Puncture",
     "partOfSpeech": "Noun",
@@ -10212,12 +9562,7 @@ const wordList = [
     "meaning": "Of crucial importance",
     "sentence": "The pivotal moment in the story changed everything."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Pedantic",
     "partOfSpeech": "Adjective",
@@ -10290,12 +9635,7 @@ const wordList = [
     "meaning": "Nearness in space, time, or relationship",
     "sentence": "The proximity of the store to my house is very convenient."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Patronize",
     "partOfSpeech": "Verb",
@@ -10368,12 +9708,7 @@ const wordList = [
     "meaning": "To suggest or assume the existence of something",
     "sentence": "The theory postulates that all matter is interconnected."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Pompous",
     "partOfSpeech": "Adjective",
@@ -10446,12 +9781,7 @@ const wordList = [
     "meaning": "Occurring after death",
     "sentence": "The artist received posthumous recognition for his work."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Plenitude",
     "partOfSpeech": "Noun",
@@ -10524,12 +9854,7 @@ const wordList = [
     "meaning": "Marked by exactness and accuracy",
     "sentence": "The surgeon made a precise incision."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Proficient",
     "partOfSpeech": "Adjective",
@@ -10602,12 +9927,7 @@ const wordList = [
     "meaning": "A person or team that qualifies for a competition or event.",
     "sentence": "The team was thrilled to be the last qualifier for the championship."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Quantum leap",
     "partOfSpeech": "Noun",
@@ -10680,12 +10000,7 @@ const wordList = [
     "meaning": "Capable of being subdued or calmed.",
     "sentence": "The child's tantrum was quellable after a short nap."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Quantifiable",
     "partOfSpeech": "Adjective",
@@ -10758,12 +10073,7 @@ const wordList = [
     "meaning": "A release or discharge from a debt or obligation.",
     "sentence": "After years of hard work, he finally received quittance from his financial responsibilities."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Quizzicality",
     "partOfSpeech": "Noun",
@@ -10836,12 +10146,7 @@ const wordList = [
     "meaning": "Attractively unusual or old-fashioned.",
     "sentence": "They stayed in a quaint cottage by the sea during their vacation."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Quantify",
     "partOfSpeech": "Verb",
@@ -10914,12 +10219,7 @@ const wordList = [
     "meaning": "Behavior that is quixotic or idealistic but impractical.",
     "sentence": "His quixotry in pursuing the impossible made him both admired and pitied by those around him."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Quartermaster",
     "partOfSpeech": "Noun",
@@ -10992,12 +10292,7 @@ const wordList = [
     "meaning": "Each of four parts of a circle, divided by two lines at right angles.",
     "sentence": "The graph was divided into four quadrants, each representing a different set of data."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Quipster",
     "partOfSpeech": "Noun",
@@ -11070,12 +10365,7 @@ const wordList = [
     "meaning": "A writing instrument made from a feather, commonly used before the invention of the modern pen.",
     "sentence": "He dipped the quill into the ink and began to write on the parchment."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Quarrelsome",
     "partOfSpeech": "Adjective",
@@ -11148,12 +10438,7 @@ const wordList = [
     "meaning": "A break or tear in something",
     "sentence": "The rupture in the pipe caused a significant water leak."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Recess",
     "partOfSpeech": "Noun",
@@ -11226,12 +10511,7 @@ const wordList = [
     "meaning": "In a state of severe disrepair",
     "sentence": "The old house was in a ramshackle condition, barely holding together."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Reign",
     "partOfSpeech": "Verb",
@@ -11304,12 +10584,7 @@ const wordList = [
     "meaning": "To make a series of short, sharp noises",
     "sentence": "The rattling of the windows indicated a strong wind outside."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Retreat",
     "partOfSpeech": "Verb",
@@ -11382,12 +10657,7 @@ const wordList = [
     "meaning": "To restore something to its rightful owner",
     "sentence": "The stolen items were returned and restitution was made."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Relent",
     "partOfSpeech": "Verb",
@@ -11460,12 +10730,7 @@ const wordList = [
     "meaning": "Firm determination to achieve something",
     "sentence": "Her resolve to succeed was evident in her tireless work ethic."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Resigned",
     "partOfSpeech": "Adjective",
@@ -11538,12 +10803,7 @@ const wordList = [
     "meaning": "To refute or contradict something",
     "sentence": "He rebutted the opposing argument with strong evidence."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Rhapsody",
     "partOfSpeech": "Noun",
@@ -11616,12 +10876,7 @@ const wordList = [
     "meaning": "To voluntarily leave a job or position",
     "sentence": "He decided to resign from his position due to personal reasons."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Restive",
     "partOfSpeech": "Adjective",
@@ -11694,12 +10949,7 @@ const wordList = [
     "meaning": "Unwilling or hesitant to do something",
     "sentence": "The student was reluctant to present in front of the entire class."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Remarkable",
     "partOfSpeech": "Adjective",
@@ -11772,12 +11022,7 @@ const wordList = [
     "meaning": "A profoundly wise person",
     "sentence": "The sage offered advice that was both insightful and calming."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Sanguine",
     "partOfSpeech": "Adjective",
@@ -11850,12 +11095,7 @@ const wordList = [
     "meaning": "To deliberately destroy or damage",
     "sentence": "The activists planned to sabotage the harmful factory operations."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Sordid",
     "partOfSpeech": "Adjective",
@@ -11928,12 +11168,7 @@ const wordList = [
     "meaning": "To rescue or save from loss or destruction",
     "sentence": "They managed to salvage some of the equipment from the wreckage."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Strident",
     "partOfSpeech": "Adjective",
@@ -12006,12 +11241,7 @@ const wordList = [
     "meaning": "Not genuine; false",
     "sentence": "The spurious documents were exposed as forgeries."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Sapient",
     "partOfSpeech": "Adjective",
@@ -12084,12 +11314,7 @@ const wordList = [
     "meaning": "Causing sleep or drowsiness",
     "sentence": "The lecture was so soporific that many students fell asleep."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Simultaneous",
     "partOfSpeech": "Adjective",
@@ -12162,12 +11387,7 @@ const wordList = [
     "meaning": "Calm, dignified, and unhurried",
     "sentence": "The sedate environment of the spa was very relaxing."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Scintillate",
     "partOfSpeech": "Verb",
@@ -12240,12 +11460,7 @@ const wordList = [
     "meaning": "Unnecessary or excessive",
     "sentence": "The extra details in the report were considered superfluous."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Sovereign",
     "partOfSpeech": "Adjective",
@@ -12318,12 +11533,7 @@ const wordList = [
     "meaning": "A word with the same or similar meaning to another word",
     "sentence": "\"Small\" is a synonym for \"little\"."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Segregate",
     "partOfSpeech": "(verb)",
@@ -12396,12 +11606,7 @@ const wordList = [
     "meaning": "Enough or adequate",
     "sentence": "The supplies were sufficient for the trip."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Sanctuary",
     "partOfSpeech": "Noun",
@@ -12474,12 +11679,7 @@ const wordList = [
     "meaning": "A unit of pronunciation consisting of one or more sounds",
     "sentence": "\"Cat\" has one syllable while \"elephant\" has three."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Startle",
     "partOfSpeech": "Verb",
@@ -12552,12 +11752,7 @@ const wordList = [
     "meaning": "A place regarded as holy or sacred",
     "sentence": "The pilgrims visited the shrine to offer prayers."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Savor",
     "partOfSpeech": "(verb)",
@@ -12630,12 +11825,7 @@ const wordList = [
     "meaning": "A bright yellow color.",
     "sentence": "On our way to the temple, we saw Buddhist monks in saffron robes."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "salutary",
     "partOfSpeech": "adjective",
@@ -12702,12 +11892,7 @@ const wordList = [
     "meaning": "Late; delayed",
     "sentence": "His tardy arrival caused him to miss the important meeting."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Tonic",
     "partOfSpeech": "Noun",
@@ -12780,12 +11965,7 @@ const wordList = [
     "meaning": "To cause severe suffering or pain",
     "sentence": "The criticism seemed to torment him more than he let on."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Transcribe",
     "partOfSpeech": "Verb",
@@ -12858,12 +12038,7 @@ const wordList = [
     "meaning": "To push or force suddenly",
     "sentence": "He thrust the book into her hands and left the room quickly."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Trite",
     "partOfSpeech": "Adjective",
@@ -12936,12 +12111,7 @@ const wordList = [
     "meaning": "To prevent someone from succeeding",
     "sentence": "Their efforts to improve the system were thwarted by unexpected technical issues."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Theoretical",
     "partOfSpeech": "Adjective",
@@ -13014,12 +12184,7 @@ const wordList = [
     "meaning": "Firmly adhering to or holding on to something.",
     "sentence": "The sticky adhesive tape was tenacious, making it challenging to remove."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Tremendous",
     "partOfSpeech": "Adjective",
@@ -13092,12 +12257,7 @@ const wordList = [
     "meaning": "Skilled in managing communication or interactions with others.",
     "sentence": "Sarah's tactful approach diffused a potentially tense situation during the meeting."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Thirsty",
     "partOfSpeech": "Adjective",
@@ -13170,12 +12330,7 @@ const wordList = [
     "meaning": "To interfere, meddle, or make unauthorized changes to something.",
     "sentence": "It is essential not to tamper with the electronic devices as it can void the warranty."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Tabulate",
     "partOfSpeech": "Verb",
@@ -13248,12 +12403,7 @@ const wordList = [
     "meaning": "A distinguishing characteristic or feature that sets someone or something apart.",
     "sentence": "One of Mark's best traits is his impeccable sense of humor, which always lightens the mood."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Transmit",
     "partOfSpeech": "(verb)",
@@ -13326,12 +12476,7 @@ const wordList = [
     "meaning": "Reddish brown clay that has been baked, used for making pots.",
     "sentence": "I went to the garden centre to buy a terracotta pot for my new plant, but they only had plastic."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "terrestrial",
     "partOfSpeech": "Adjective",
@@ -13404,12 +12549,7 @@ const wordList = [
     "meaning": "A proposition laid down or stated.",
     "sentence": "The thesis of this paper is very clear."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "thistle",
     "partOfSpeech": "Noun",
@@ -13476,12 +12616,7 @@ const wordList = [
     "meaning": "The physical features of an area of land, especially the position of its rivers, mountains.",
     "sentence": "From the air, it is possible to see the entire topography of a region."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "tortuous",
     "partOfSpeech": "Adjective",
@@ -13548,12 +12683,7 @@ const wordList = [
     "meaning": "The state of being everywhere at once.",
     "sentence": "The ubiquity of smartphones has changed the way people communicate."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Ulcer",
     "partOfSpeech": "Noun",
@@ -13626,12 +12756,7 @@ const wordList = [
     "meaning": "Simple and easy to understand; not complex.",
     "sentence": "The instructions were straightforward and uncomplicated."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Unrepentant",
     "partOfSpeech": "Adjective",
@@ -13704,12 +12829,7 @@ const wordList = [
     "meaning": "Not deserving of something; inadequate.",
     "sentence": "The criticism was harsh and he felt it was unworthy of his efforts."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Underprivileged",
     "partOfSpeech": "Adjective",
@@ -13782,12 +12902,7 @@ const wordList = [
     "meaning": "Not lived in or occupied; deserted.",
     "sentence": "The island remained uninhabited due to its remote location."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Unaffected",
     "partOfSpeech": "Adjective",
@@ -13860,12 +12975,7 @@ const wordList = [
     "meaning": "Not conspicuous or attracting attention; inconspicuous.",
     "sentence": "The design of the security cameras was unobtrusive, blending well with the decor."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Unbroken",
     "partOfSpeech": "Adjective",
@@ -13938,12 +13048,7 @@ const wordList = [
     "meaning": "Not completely sure or confident; doubtful.",
     "sentence": "The outcome of the experiment remained uncertain until further tests could be conducted."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Unkempt",
     "partOfSpeech": "Adjective",
@@ -14016,12 +13121,7 @@ const wordList = [
     "meaning": "Not decorated or embellished; plain.",
     "sentence": "The room was unadorned, reflecting a simple and minimalist style."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Unmistakable",
     "partOfSpeech": "Adjective",
@@ -14094,12 +13194,7 @@ const wordList = [
     "meaning": "To speak or write about in an abusively disparaging manner.",
     "sentence": "The campaign sought to vilify the opponent with misleading ads."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Verve",
     "partOfSpeech": "Noun",
@@ -14172,12 +13267,7 @@ const wordList = [
     "meaning": "The state of being true or real; a fundamental truth.",
     "sentence": "The philosophical debate centered around the nature of verity in human existence."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Verbal",
     "partOfSpeech": "Adjective",
@@ -14250,12 +13340,7 @@ const wordList = [
     "meaning": "Having won a victory; triumphant.",
     "sentence": "The victorious team celebrated their championship win with a grand parade."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Void",
     "partOfSpeech": "Noun/Adjective",
@@ -14328,12 +13413,7 @@ const wordList = [
     "meaning": "Causing or likely to cause annoyance, frustration, or worry.",
     "sentence": "The vexatious legal battle dragged on for years, causing stress for everyone involved."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Vanity",
     "partOfSpeech": "Noun",
@@ -14406,12 +13486,7 @@ const wordList = [
     "meaning": "To boast about or praise something excessively.",
     "sentence": "He liked to vaunt his achievements to everyone he met."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Validate",
     "partOfSpeech": "Verb",
@@ -14484,12 +13559,7 @@ const wordList = [
     "meaning": "Wicked or evil; having a criminal nature.",
     "sentence": "The villainous character in the movie plotted to overthrow the government."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Vital",
     "partOfSpeech": "Adjective",
@@ -14562,12 +13632,7 @@ const wordList = [
     "meaning": "Capable of injecting venom by means of a bite or sting; full of malice.",
     "sentence": "The venomous snake posed a significant threat to anyone who ventured too close."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Virtuously",
     "partOfSpeech": "Adverb",
@@ -14640,12 +13705,7 @@ const wordList = [
     "meaning": "The remains of something that has been destroyed or severely damaged.",
     "sentence": "The rescue team searched through the wreckage for survivors."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Wafting",
     "partOfSpeech": "Verb",
@@ -14718,12 +13778,7 @@ const wordList = [
     "meaning": "Present participle of weave; forming fabric by interlacing threads.",
     "sentence": "She spent the afternoon weaving a colorful tapestry on her loom."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Warmth",
     "partOfSpeech": "Noun",
@@ -14796,12 +13851,7 @@ const wordList = [
     "meaning": "A sudden or impulsive decision or desire.",
     "sentence": "They took a trip to the coast on a whim, without any advance planning."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Wallow",
     "partOfSpeech": "Verb",
@@ -14874,12 +13924,7 @@ const wordList = [
     "meaning": "Justified or needed; something that is necessary or appropriate.",
     "sentence": "Her anger was warranted after the unfair treatment she received."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Wheeze",
     "partOfSpeech": "Verb",
@@ -14952,12 +13997,7 @@ const wordList = [
     "meaning": "To gradually accustom a baby or young animal to take food other than its mother's milk.",
     "sentence": "They decided it was time to wean the baby from breastfeeding to bottle feeding."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Wanderlust",
     "partOfSpeech": "Noun",
@@ -15030,12 +14070,7 @@ const wordList = [
     "meaning": "A feeling of vague or regretful longing.",
     "sentence": "The old photos evoked a sense of wistfulness about the past."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Workmanlike",
     "partOfSpeech": "Adjective",
@@ -15108,12 +14143,7 @@ const wordList = [
     "meaning": "To spin or rotate rapidly.",
     "sentence": "The merry-go-round made the children dizzy as it began to whirl."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Wholesome",
     "partOfSpeech": "Adjective",
@@ -15186,12 +14216,7 @@ const wordList = [
     "meaning": "A musical instrument similar to a xylophone, but with a larger range and resonators.",
     "sentence": "The xylorimba's rich, resonant tones added a unique dimension to the orchestral performance."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Xylocarpic",
     "partOfSpeech": "Adjective",
@@ -15264,12 +14289,7 @@ const wordList = [
     "meaning": "A musician who plays the xylophone.",
     "sentence": "The xylophoneist performed a complex solo that showcased their skill and precision."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Xenon-flash",
     "partOfSpeech": "Noun",
@@ -15342,12 +14362,7 @@ const wordList = [
     "meaning": "Dryness of the mouth due to reduced or absent saliva.",
     "sentence": "Xerostomia can lead to difficulties in speaking and swallowing, and may require treatment."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Xerarch",
     "partOfSpeech": "Adjective",
@@ -15420,12 +14435,7 @@ const wordList = [
     "meaning": "Extremely dry or having a dry appearance.",
     "sentence": "The xerotic skin condition required special moisturizing treatments to prevent cracking."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Xylorhiza",
     "partOfSpeech": "Noun",
@@ -15498,12 +14508,7 @@ const wordList = [
     "meaning": "Capable of cutting or boring into wood.",
     "sentence": "The xylotomous insect larvae are known for damaging wooden structures."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Xanthic",
     "partOfSpeech": "Adjective",
@@ -15576,12 +14581,7 @@ const wordList = [
     "meaning": "A rock fragment embedded in another type of rock.",
     "sentence": "The geologists studied the xenolith to understand the history of the surrounding rock."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Xerography",
     "partOfSpeech": "Noun",
@@ -15654,12 +14654,7 @@ const wordList = [
     "meaning": "A plastid involved in the synthesis and storage of starch in plants.",
     "sentence": "Xyloplasts are important for the plant\u2019s\ncarbohydrate storage."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Xenorhynchus",
     "partOfSpeech": "Noun",
@@ -15732,12 +14727,7 @@ const wordList = [
     "meaning": "Making a high-pitched, sharp cry or bark; a sharp, high-pitched cry.",
     "sentence": "The dog was yelping outside, startling the neighbors."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Yuppy",
     "partOfSpeech": "Noun",
@@ -15810,12 +14800,7 @@ const wordList = [
     "meaning": "In a way that makes a loud, harsh noise; characterized by yawping.",
     "sentence": "The dog was barking yawpingly at the passing cars, causing quite a disturbance."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Yummiest",
     "partOfSpeech": "Adjective",
@@ -15888,12 +14873,7 @@ const wordList = [
     "meaning": "In a loud and shouting manner.",
     "sentence": "He yelled yellingly across the field to get their attention."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Yew-tree",
     "partOfSpeech": "Noun",
@@ -15966,12 +14946,7 @@ const wordList = [
     "meaning": "A slang term for a rude or uncultured person, often used in British English.",
     "sentence": "The group of yobs caused trouble in the neighborhood last night."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Yodeling",
     "partOfSpeech": "Noun",
@@ -16044,12 +15019,7 @@ const wordList = [
     "meaning": "The period of Christmas and New Year; a celebration of the winter solstice.",
     "sentence": "We gathered around the Yule log to celebrate the winter holidays."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Yabby",
     "partOfSpeech": "Noun",
@@ -16122,12 +15092,7 @@ const wordList = [
     "meaning": "Rude or uncouth in behavior; boorish.",
     "sentence": "The yobbish behavior of the group was disturbing to the other diners."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Yowl",
     "partOfSpeech": "Verb",
@@ -16200,12 +15165,7 @@ const wordList = [
     "meaning": "Done with great energy and enthusiasm.",
     "sentence": "She worked zealously to ensure the project was completed on time."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Zealotism",
     "partOfSpeech": "Noun",
@@ -16278,12 +15238,7 @@ const wordList = [
     "meaning": "Slippery or prone to getting stuck when zipped.",
     "sentence": "The zippery jacket was difficult to zip up because of its design."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Zazen",
     "partOfSpeech": "Noun",
@@ -16356,12 +15311,7 @@ const wordList = [
     "meaning": "Having toes or digits arranged in pairs, typically found in certain birds.",
     "sentence": "The zygodactylous arrangement of the bird's toes helps it grasp branches more effectively."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Zygomycetes",
     "partOfSpeech": "Noun",
@@ -16434,12 +15384,7 @@ const wordList = [
     "meaning": "The sixth letter of the Greek alphabet, often used in various scientific and mathematical contexts.",
     "sentence": "The zeta function is an important concept in mathematical theory."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Zymologist",
     "partOfSpeech": "Noun",
@@ -16512,12 +15457,7 @@ const wordList = [
     "meaning": "Containing or producing zinc.",
     "sentence": "The zinciferous ore was processed to extract valuable zinc."
   },
-  {
-    "word": "Word",
-    "partOfSpeech": "Part of Speech",
-    "meaning": "Meaning",
-    "sentence": "Sentence"
-  },
+  
   {
     "word": "Zoomorph",
     "partOfSpeech": "Noun",
