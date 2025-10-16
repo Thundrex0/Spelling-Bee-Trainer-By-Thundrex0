@@ -40,7 +40,7 @@ function register() {
   message.className = "message success";
 
   setTimeout(() => {
-    window.location.href = "https://thundrex0.github.io/Spelling-Bee-Trainer-By-Thundrex0/rounds.html/";
+    window.location.href = "https://thundrex0.github.io/Spelling-Bee-Trainer-By-Thundrex0/rounds";
   }, 1000);
 }
 
@@ -69,6 +69,6 @@ function login() {
   message.className = "message success";
 
   setTimeout(() => {
-    window.location.href = "https://thundrex0.github.io/Spelling-Bee-Trainer-By-Thundrex0/rounds.html/";
+    window.location.href = "https://thundrex0.github.io/Spelling-Bee-Trainer-By-Thundrex0/rounds";
   }, 1000);
 }
