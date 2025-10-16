@@ -42,7 +42,7 @@ function loadMistakeWords() {
     return;
   }
 
-  mistakeWords = wordList.filter(word =>
+  mistakeWords = wordList2.filter(word =>
     users[username].mistakes.includes(word.word)
   );
 

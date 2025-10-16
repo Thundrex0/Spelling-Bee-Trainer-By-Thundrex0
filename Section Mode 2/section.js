@@ -48,7 +48,7 @@ function generateLetterButtons() {
 }
 
 function selectLetter(letter) {
-  filteredWords = wordList.filter(word =>
+  filteredWords = wordList2.filter(word =>
     word.word.toLowerCase().startsWith(letter.toLowerCase())
   );
 
