@@ -27,10 +27,10 @@ profileIcon.addEventListener("click", () => {
 
 // ✅ Button redirects
 const modeRedirects = {
-  "Random Mode": "../Random Mode/index.html",
-  "Section Mode": "../Section Mode/index.html",
-  "Review Mistakes": "../Review Mistakes/index.html",
-  "Streak Mode": "../Streak Mode/index.html",
+  "Random Mode": "../Random Mode 2/index.html",
+  "Section Mode": "../Section Mode 2/index.html",
+  "Review Mistakes": "../Review Mistakes 2/index.html",
+  "Streak Mode": "../Streak Mode 2/index.html",
 }
 
 // ✅ Listen to all buttons with data-mode

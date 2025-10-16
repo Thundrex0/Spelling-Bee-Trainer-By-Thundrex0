@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Mode | Spelling Bee Trainer</title>
+  <link rel="stylesheet" href="random.css">
+</head>
+<body>
+
+  <header class="random-header">
+    <h1>🔁 Random Mode</h1>
+    <button id="logout-btn" title="Logout">🚪</button>
+  </header>
+
+  <main class="random-main">
+
+    <section class="word-box">
+      <button id="play-sound" title="Hear word">🔊</button>
+      <h2 id="word-heading">Spell the word!</h2>
+    </section>
+
+    <section class="info-box">
+      <h3>Meaning</h3>
+      <p id="word-meaning">---</p>
+
+      <h3>Part of Speech</h3>
+      <p id="word-pos">---</p>
+    </section>
+
+    <section class="input-box">
+      <input type="text" id="user-input" placeholder="Type your answer here" autocomplete="off">
+      <div class="action-buttons">
+        <button id="check-btn">✔️ Check</button>
+        <button id="next-btn">➡️ Next</button>
+        <button id="show-answer-btn">❔ Show Answer</button>
+        <button id="retry-btn">🔁 Retry</button>
+      </div>
+    </section>
+
+    <section class="feedback-box">
+      <p id="feedback-text"></p>
+    </section>
+
+  </main>
+
+  <script src="WordList.js"></script>
+  <script src="random.js"></script>
+
+</body>
+</html>
