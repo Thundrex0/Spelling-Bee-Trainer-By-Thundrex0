@@ -1,4 +1,4 @@
-const wordList2 = [
+const WordList2 = [
     ,
   {"word": "Admonish", "partOfSpeech": "Verb", "meaning": "To warn or reprimand someone firmly"},
   {"word": "Adrenaline", "partOfSpeech": "Noun", "meaning": "A hormone released in response to stress or excitement, which increases heart rate and energy"},
