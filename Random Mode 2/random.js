@@ -34,7 +34,7 @@ function loadRandomWord() {
   feedback.textContent = "";
   input.value = "";
 
-  if (usedIndexes.length >= wordList.length) usedIndexes = [];
+  if (usedIndexes.length >= WordList2.length) usedIndexes = [];
 
   let index;
   do {
@@ -42,7 +42,7 @@ function loadRandomWord() {
   } while (usedIndexes.includes(index));
 
   usedIndexes.push(index);
-  currentWord = wordList[index];
+  currentWord = WordList2[index];
 
   heading.textContent = "Spell the word!";
   meaningBox.textContent = currentWord.meaning;
