@@ -9,6 +9,8 @@ let streak = parseInt(localStorage.getItem("streak")) || 0;
 let totalTime = parseInt(localStorage.getItem("timePlayed")) || 0;
 const startTime = Date.now();
 
+// ✅ Initialize WordList with fallback
+let WordList = window.WordList || [];
 let filteredWords = [];
 let currentWord = null;
 let currentIndex = 0;
@@ -49,20 +51,38 @@ function generateLetterButtons() {
   }
 }
 
-// === Letter selection and word filtering
+// === Letter selection and word filtering - DEBUG VERSION
 function selectLetter(letter) {
-  if (!Array.isArray(WordList)) {
-    console.error("wordList is missing or not loaded!");
-    return;
+  console.log("Letter clicked:", letter);
+  console.log("WordList available:", Array.isArray(WordList));
+  console.log("WordList length:", WordList ? WordList.length : 0);
+  
+  // Try multiple fallback options
+  if (!Array.isArray(WordList) || WordList.length === 0) {
+    console.log("WordList not found, trying fallbacks...");
+    WordList = window.WordList || [];
+    
+    // If still not found, try to get from global scope
+    if (!Array.isArray(WordList) || WordList.length === 0) {
+      console.error("WordList is missing or not loaded!");
+      heading.textContent = "Word list not loaded! Please refresh.";
+      resetInfo();
+      return;
+    }
   }
 
   filteredWords = WordList.filter(word =>
-    word.word.toLowerCase().startsWith(letter.toLowerCase())
+    word.word && word.word.toLowerCase().startsWith(letter.toLowerCase())
   );
 
+  console.log("Filtered words found:", filteredWords.length);
+  console.log("First few filtered words:", filteredWords.slice(0, 3));
+
   if (filteredWords.length === 0) {
-    heading.textContent = `No words found for ${letter}`;
+    heading.textContent = `No words found for "${letter}"`;
     resetInfo();
+    feedback.textContent = `Try another letter. No words starting with "${letter}" found.`;
+    feedback.style.color = "#ef4444";
     return;
   }
 
@@ -70,20 +90,44 @@ function selectLetter(letter) {
   loadCurrentWord();
 }
 
-// === Load current word
+// === Load current word - DEBUG VERSION
 function loadCurrentWord() {
+  console.log("Loading current word...");
+  console.log("filteredWords:", filteredWords);
+  console.log("currentIndex:", currentIndex);
+  
+  if (!filteredWords || filteredWords.length === 0) {
+    console.error("No filtered words available");
+    heading.textContent = "No words loaded";
+    return;
+  }
+  
   currentWord = filteredWords[currentIndex];
-  if (!currentWord) return;
-  heading.textContent = "Spell the word!";
+  console.log("Current word:", currentWord);
+  
+  if (!currentWord) {
+    console.error("No current word at index:", currentIndex);
+    heading.textContent = "Error loading word";
+    return;
+  }
+  
+  heading.textContent = `Spell the word! (${currentIndex + 1}/${filteredWords.length})`;
   input.value = "";
   feedback.textContent = "";
   meaningBox.textContent = currentWord.meaning || "---";
   posBox.textContent = currentWord.partOfSpeech || "---";
+  
+  console.log("Word loaded successfully:", currentWord.word);
 }
 
 // === Load next word
 function loadNextWord() {
-  if (!filteredWords.length) return;
+  if (!filteredWords.length) {
+    feedback.textContent = "No words loaded. Select a letter first.";
+    feedback.style.color = "#ef4444";
+    return;
+  }
+  
   feedback.textContent = "";
   input.value = "";
   currentIndex = (currentIndex + 1) % filteredWords.length;
@@ -92,7 +136,12 @@ function loadNextWord() {
 
 // === Word check
 function checkAnswer() {
-  if (!currentWord) return;
+  if (!currentWord) {
+    feedback.textContent = "No word selected. Choose a letter first.";
+    feedback.style.color = "#ef4444";
+    return;
+  }
+  
   const userInput = input.value.trim().toLowerCase();
   const correct = currentWord.word.toLowerCase();
 
@@ -113,7 +162,7 @@ function checkAnswer() {
     saveScore();
   } else {
     streak = 0;
-    feedback.textContent = `❌ Incorrect! The correct spelling was ${currentWord.word}`;
+    feedback.textContent = `❌ Incorrect! The correct spelling was "${currentWord.word}"`;
     feedback.style.color = "#ef4444";
     saveMistake(currentWord.word);
   }
@@ -125,24 +174,41 @@ function checkAnswer() {
 
 // === Retry word
 function retryWord() {
+  if (!currentWord) {
+    feedback.textContent = "No word to retry. Select a letter first.";
+    feedback.style.color = "#ef4444";
+    return;
+  }
   feedback.textContent = "";
   input.value = "";
 }
 
 // === Show answer
 function showAnswer() {
-  if (!currentWord) return;
+  if (!currentWord) {
+    feedback.textContent = "No word selected. Choose a letter first.";
+    feedback.style.color = "#ef4444";
+    return;
+  }
   feedback.textContent = `Answer: ${currentWord.word}`;
   feedback.style.color = "#f59e0b";
 }
 
 // === Play pronunciation
 function playWord() {
-  if (!currentWord || !currentWord.word) return;
-  if (speechSynthesis.speaking) return;
+  if (!currentWord || !currentWord.word) {
+    feedback.textContent = "No word to pronounce. Select a letter first.";
+    feedback.style.color = "#ef4444";
+    return;
+  }
+  
+  if (speechSynthesis.speaking) {
+    speechSynthesis.cancel();
+  }
 
   const utter = new SpeechSynthesisUtterance(currentWord.word);
   utter.lang = "en-US";
+  utter.rate = 0.8;
   speechSynthesis.speak(utter);
 }
 
@@ -150,6 +216,10 @@ function playWord() {
 function saveScore() {
   const users = JSON.parse(localStorage.getItem("users")) || {};
   if (!users[username]) return;
+  
+  if (!users[username].scores) {
+    users[username].scores = { section: 0 };
+  }
   users[username].scores.section += 1;
   localStorage.setItem("users", JSON.stringify(users));
 }
@@ -157,6 +227,10 @@ function saveScore() {
 function saveMistake(word) {
   const users = JSON.parse(localStorage.getItem("users")) || {};
   if (!users[username]) return;
+
+  if (!users[username].mistakes) {
+    users[username].mistakes = [];
+  }
 
   if (!users[username].mistakes.includes(word)) {
     users[username].mistakes.push(word);
