@@ -13,7 +13,7 @@ let filteredWords = [];
 let currentWord = null;
 let currentIndex = 0;
 
-// DOM
+// DOM elements
 const letterGrid = document.getElementById("letter-grid");
 const input = document.getElementById("user-input");
 const meaningBox = document.getElementById("word-meaning");
@@ -36,8 +36,9 @@ document.getElementById("retry-btn").addEventListener("click", retryWord);
 document.getElementById("show-answer-btn").addEventListener("click", showAnswer);
 document.getElementById("play-sound").addEventListener("click", playWord);
 
-// === Letter Buttons
+// === Generate Letter Buttons
 function generateLetterButtons() {
+  letterGrid.innerHTML = ""; // clear old buttons
   for (let i = 65; i <= 90; i++) {
     const letter = String.fromCharCode(i);
     const btn = document.createElement("button");
@@ -48,7 +49,13 @@ function generateLetterButtons() {
   }
 }
 
+// === Letter selection and word filtering
 function selectLetter(letter) {
+  if (!Array.isArray(wordList)) {
+    console.error("wordList is missing or not loaded!");
+    return;
+  }
+
   filteredWords = wordList.filter(word =>
     word.word.toLowerCase().startsWith(letter.toLowerCase())
   );
@@ -63,15 +70,18 @@ function selectLetter(letter) {
   loadCurrentWord();
 }
 
+// === Load current word
 function loadCurrentWord() {
   currentWord = filteredWords[currentIndex];
+  if (!currentWord) return;
   heading.textContent = "Spell the word!";
   input.value = "";
   feedback.textContent = "";
-  meaningBox.textContent = currentWord.meaning;
-  posBox.textContent = currentWord.partOfSpeech;
+  meaningBox.textContent = currentWord.meaning || "---";
+  posBox.textContent = currentWord.partOfSpeech || "---";
 }
 
+// === Load next word
 function loadNextWord() {
   if (!filteredWords.length) return;
   feedback.textContent = "";
@@ -80,7 +90,7 @@ function loadNextWord() {
   loadCurrentWord();
 }
 
-// === Word Check
+// === Word check
 function checkAnswer() {
   if (!currentWord) return;
   const userInput = input.value.trim().toLowerCase();
@@ -103,7 +113,7 @@ function checkAnswer() {
     saveScore();
   } else {
     streak = 0;
-    feedback.textContent = "❌ Incorrect!";
+    feedback.textContent = `❌ Incorrect! The correct spelling was ${currentWord.word}`;
     feedback.style.color = "#ef4444";
     saveMistake(currentWord.word);
   }
@@ -113,17 +123,20 @@ function checkAnswer() {
   localStorage.setItem("accuracy", accuracy + "%");
 }
 
+// === Retry word
 function retryWord() {
   feedback.textContent = "";
   input.value = "";
 }
 
+// === Show answer
 function showAnswer() {
   if (!currentWord) return;
-  feedback.textContent = `The correct spelling is: ${currentWord.word}`;
+  feedback.textContent = `Answer: ${currentWord.word}`;
   feedback.style.color = "#f59e0b";
 }
 
+// === Play pronunciation
 function playWord() {
   if (!currentWord || !currentWord.word) return;
   if (speechSynthesis.speaking) return;
@@ -133,7 +146,7 @@ function playWord() {
   speechSynthesis.speak(utter);
 }
 
-// === Save User Score
+// === Save data
 function saveScore() {
   const users = JSON.parse(localStorage.getItem("users")) || {};
   if (!users[username]) return;
@@ -151,6 +164,7 @@ function saveMistake(word) {
   }
 }
 
+// === Reset info boxes
 function resetInfo() {
   meaningBox.textContent = "---";
   posBox.textContent = "---";
@@ -158,56 +172,10 @@ function resetInfo() {
   feedback.textContent = "";
 }
 
-// === Track Time Played
+// === Track time played
 window.addEventListener("beforeunload", () => {
   const endTime = Date.now();
   const sessionMinutes = Math.floor((endTime - startTime) / 60000);
   const updatedTime = totalTime + sessionMinutes;
   localStorage.setItem("timePlayed", updatedTime + "m");
 });
-
-// === Keyboard Shortcuts (Number-Based + Arrow Right)
-document.addEventListener("keydown", (event) => {
-  // Skip typing letters into the input
-  if (event.target === input && !["Enter", "ArrowRight", "2", "3", "4"].includes(event.key)) return;
-
-  switch (event.key) {
-    case "Enter":
-      checkAnswer();
-      event.preventDefault();
-      break;
-    case "ArrowRight":
-      highlightButton("next-btn");
-      loadNextWord();
-      break;
-    case "2":
-      highlightButton("retry-btn");
-      retryWord();
-      break;
-    case "3":
-      highlightButton("show-answer-btn");
-      showAnswer();
-      break;
-    case "4":
-      highlightButton("play-sound");
-      playWord();
-      break;
-  }
-});
-
-// === Visual Feedback
-function highlightButton(buttonId) {
-  const btn = document.getElementById(buttonId);
-  if (!btn) return;
-  btn.classList.add("active-key");
-  setTimeout(() => btn.classList.remove("active-key"), 200);
-}
-
-/* === CSS to Add ===
-.active-key {
-  transform: scale(0.95);
-  background-color: #4ade80;
-  box-shadow: 0 0 10px #4ade80aa;
-  transition: all 0.2s ease;
-}
-*/
