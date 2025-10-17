@@ -1399,7 +1399,7 @@ const WordList2 = [
     "partOfSpeech": "Noun",
     "meaning": "A Chinese martial art that focuses on striking and blocking techniques"
   }
-][
+,
   {
     "word": "Legitimise",
     "partOfSpeech": "Verb",
@@ -7972,5 +7972,867 @@ const WordList2 = [
     "word": "xanthoproteic",
     "partOfSpeech": "adjective",
     "meaning": "Relating to or indicating the presence of yellow protein compounds"
+  }
+  ,
+  {
+    "word": "Yuppie",
+    "partOfSpeech": "Noun",
+    "meaning": "A young urban professional with a high income."
+  },
+  {
+    "word": "Yeatsian",
+    "partOfSpeech": "Adjective",
+    "meaning": "Relating to the works or style of W.B. Yeats, an Irish poet."
+  },
+  {
+    "word": "Youngish",
+    "partOfSpeech": "Adjective",
+    "meaning": "Somewhat young; not quite young but not old either."
+  },
+  {
+    "word": "Yaw",
+    "partOfSpeech": "Verb",
+    "meaning": "To twist or oscillate about a vertical axis, especially in a vehicle or aircraft."
+  },
+  {
+    "word": "Yawp",
+    "partOfSpeech": "Noun",
+    "meaning": "A loud, harsh cry or noise."
+  },
+  {
+    "word": "Yearn",
+    "partOfSpeech": "Verb",
+    "meaning": "To have a strong desire or longing for something."
+  },
+  {
+    "word": "Yearly",
+    "partOfSpeech": "Adjective",
+    "meaning": "Happening or occurring once a year; annual."
+  },
+  {
+    "word": "Yell",
+    "partOfSpeech": "Verb",
+    "meaning": "To shout loudly, usually out of anger, fear, or excitement."
+  },
+  {
+    "word": "Yelp",
+    "partOfSpeech": "Verb",
+    "meaning": "To make a high-pitched or sharp cry, typically from pain or surprise."
+  },
+  {
+    "word": "Yield",
+    "partOfSpeech": "Noun",
+    "meaning": "The amount produced or provided; the output or return."
+  },
+  {
+    "word": "Youngster",
+    "partOfSpeech": "Noun",
+    "meaning": "A young person, often a child or teenager."
+  },
+  {
+    "word": "Yin and yang",
+    "partOfSpeech": "Noun",
+    "meaning": "A concept from Chinese philosophy representing complementary opposites."
+  },
+  {
+    "word": "Yardstick",
+    "partOfSpeech": "Noun",
+    "meaning": "A measuring tool approximately one yard (36 inches) long."
+  },
+  {
+    "word": "Yodel",
+    "partOfSpeech": "Verb",
+    "meaning": "To sing with sudden changes between low and high tones, as in the traditional Swiss style."
+  },
+  {
+    "word": "Youth",
+    "partOfSpeech": "Noun",
+    "meaning": "The period between childhood and adulthood; young people as a collective."
+  },
+  {
+    "word": "Yank",
+    "partOfSpeech": "Verb",
+    "meaning": "To pull or tug suddenly and forcefully."
+  },
+  {
+    "word": "Yo-yo",
+    "partOfSpeech": "Noun",
+    "meaning": "A toy consisting of a spool attached to a string used for performing tricks."
+  },
+  {
+    "word": "Yearning",
+    "partOfSpeech": "Adjective",
+    "meaning": "Marked by a strong longing or desire."
+  },
+  {
+    "word": "Young",
+    "partOfSpeech": "Noun",
+    "meaning": "A young person, typically a child or teenager."
+  },
+  {
+    "word": "Yesteryear",
+    "partOfSpeech": "Noun",
+    "meaning": "The time in the past, especially the recent past."
+  },
+  {
+    "word": "Yoga",
+    "partOfSpeech": "Verb",
+    "meaning": "To practice or engage in yoga exercises and meditation."
+  },
+  {
+    "word": "Yesterday",
+    "partOfSpeech": "Adverb",
+    "meaning": "On the day immediately preceding the present day."
+  },
+  {
+    "word": "Yacht",
+    "partOfSpeech": "Adjective",
+    "meaning": "Relating to or characteristic of yachts or yachting."
+  },
+  {
+    "word": "Yawn",
+    "partOfSpeech": "Interjection",
+    "meaning": "Used to represent the sound of someone yawning; an expression of tiredness or boredom."
+  },
+  {
+    "word": "Yearlong",
+    "partOfSpeech": "Adjective",
+    "meaning": "Lasting for the entire year; lasting a year."
+  },
+  {
+    "word": "Yielding",
+    "partOfSpeech": "Adjective",
+    "meaning": "Easily bending or flexible; able to adapt or change."
+  },
+  {
+    "word": "Yummy",
+    "partOfSpeech": "Interjection",
+    "meaning": "Used to express pleasure or satisfaction with something tasty."
+  },
+  {
+    "word": "Yarn",
+    "partOfSpeech": "Interjection",
+    "meaning": "Used to express disbelief or questioning."
+  },
+  {
+    "word": "Yogi",
+    "partOfSpeech": "Noun",
+    "meaning": "A person who practices yoga."
+  },
+  {
+    "word": "Yearbook",
+    "partOfSpeech": "Adjective",
+    "meaning": "Relating to or characteristic of yearbooks."
+  },
+  {
+    "word": "Youthful",
+    "partOfSpeech": "Noun",
+    "meaning": "The characteristics or qualities associated with youth."
+  },
+  {
+    "word": "Yonder",
+    "partOfSpeech": "Adverb",
+    "meaning": "At or in that place; over there."
+  },
+  {
+    "word": "YMCA",
+    "partOfSpeech": "Acronym",
+    "meaning": "Young Men's Christian Association, a global organization providing services to youth and communities."
+  },
+  {
+    "word": "Yankee",
+    "partOfSpeech": "Interjection",
+    "meaning": "Used to express surprise or disbelief."
+  },
+  {
+    "word": "Yodeler",
+    "partOfSpeech": "Noun",
+    "meaning": "A person who yodels; one who sings with sudden changes between low and high tones."
+  },
+  {
+    "word": "yes",
+    "partOfSpeech": "adverb",
+    "meaning": "Used to express agreement or affirmation"
+  },
+  {
+    "word": "yogurt",
+    "partOfSpeech": "noun",
+    "meaning": "A creamy dairy product made by fermenting milk"
+  },
+  {
+    "word": "yet",
+    "partOfSpeech": "adverb",
+    "meaning": "Up to the present time; until now"
+  },
+  {
+    "word": "yare",
+    "partOfSpeech": "adjective",
+    "meaning": "Quick and agile"
+  },
+  {
+    "word": "yurt",
+    "partOfSpeech": "noun",
+    "meaning": "A portable, circular dwelling used by nomads"
+  },
+  {
+    "word": "yellowed",
+    "partOfSpeech": "adjective",
+    "meaning": "Having turned yellow, often from age or exposure"
+  },
+  {
+    "word": "yearnful",
+    "partOfSpeech": "adjective",
+    "meaning": "Expressing a deep longing"
+  },
+  {
+    "word": "yachting",
+    "partOfSpeech": "noun",
+    "meaning": "The activity of sailing yachts"
+  },
+  {
+    "word": "yes-man",
+    "partOfSpeech": "noun",
+    "meaning": "A person who agrees with everything without questioning"
+  },
+  {
+    "word": "yellowtail",
+    "partOfSpeech": "noun",
+    "meaning": "A type of fish, often found in warm waters"
+  },
+  {
+    "word": "youthquake",
+    "partOfSpeech": "noun",
+    "meaning": "A significant cultural, political, or social change caused by young people"
+  },
+  {
+    "word": "yappy",
+    "partOfSpeech": "adjective",
+    "meaning": "Talking a lot in a noisy, annoying way"
+  },
+  {
+    "word": "yellowcake",
+    "partOfSpeech": "noun",
+    "meaning": "A type of uranium concentrate used in nuclear reactors"
+  },
+  {
+    "word": "yieldable",
+    "partOfSpeech": "adjective",
+    "meaning": "Capable of being produced or granted"
+  },
+  {
+    "word": "yeti",
+    "partOfSpeech": "noun",
+    "meaning": "A mythical creature resembling a large ape"
+  },
+  {
+    "word": "yarely",
+    "partOfSpeech": "adverb",
+    "meaning": "With agility or readiness"
+  },
+  {
+    "word": "youngling",
+    "partOfSpeech": "noun",
+    "meaning": "A young person or animal"
+  },
+  {
+    "word": "yo-yoing",
+    "partOfSpeech": "noun",
+    "meaning": "The act of playing with a yo-yo"
+  },
+  {
+    "word": "yellowfin",
+    "partOfSpeech": "noun",
+    "meaning": "A type of tuna known for its distinctive yellow fins"
+  },
+  {
+    "word": "yetis",
+    "partOfSpeech": "noun",
+    "meaning": "Plural of yeti, referring to the mythical creatures"
+  },
+  {
+    "word": "yuletide",
+    "partOfSpeech": "noun",
+    "meaning": "The Christmas season"
+  },
+  {
+    "word": "yestermorrow",
+    "partOfSpeech": "noun",
+    "meaning": "The day after yesterday"
+  },
+  {
+    "word": "yellowjacket",
+    "partOfSpeech": "noun",
+    "meaning": "A type of wasp known for its aggressive behavior"
+  },
+  {
+    "word": "yieldingly",
+    "partOfSpeech": "adverb",
+    "meaning": "In a manner that is willing to give way"
+  },
+  {
+    "word": "yin-yang",
+    "partOfSpeech": "noun",
+    "meaning": "A concept in Chinese philosophy representing opposite forces in harmony"
+  },
+  {
+    "word": "yeasty",
+    "partOfSpeech": "adjective",
+    "meaning": "Of or resembling yeast; frothy"
+  },
+  {
+    "word": "youthly",
+    "partOfSpeech": "adjective",
+    "meaning": "Pertaining to youth; youthful"
+  },
+  {
+    "word": "yellowing",
+    "partOfSpeech": "noun",
+    "meaning": "The process of turning yellow over time"
+  },
+  {
+    "word": "youthful exuberance",
+    "partOfSpeech": "noun",
+    "meaning": "The energy and enthusiasm of young people"
+  },
+  {
+    "word": "yet-to-be",
+    "partOfSpeech": "adjective",
+    "meaning": "Not yet realized or completed"
+  },
+  {
+    "word": "youthful spirit",
+    "partOfSpeech": "noun",
+    "meaning": "An attitude or demeanor that reflects youthfulness"
+  },
+  {
+    "word": "yoke off",
+    "partOfSpeech": "verb",
+    "meaning": "To remove a yoke from animals"
+  },
+  {
+    "word": "yesternight",
+    "partOfSpeech": "noun",
+    "meaning": "The night before today"
+  },
+  {
+    "word": "yawn-inducing",
+    "partOfSpeech": "adjective",
+    "meaning": "Causing one to feel sleepy or bored"
+  },
+  {
+    "word": "yardage",
+    "partOfSpeech": "noun",
+    "meaning": "The distance measured in yards"
+  },
+  {
+    "word": "yucca",
+    "partOfSpeech": "noun",
+    "meaning": "A type of plant with sword-shaped leaves"
+  },
+  {
+    "word": "youthful idealism",
+    "partOfSpeech": "noun",
+    "meaning": "A belief in the goodness and potential of youth"
+  },
+  {
+    "word": "yoke up",
+    "partOfSpeech": "verb",
+    "meaning": "To put a yoke on animals"
+  },
+  {
+    "word": "yowser",
+    "partOfSpeech": "noun",
+    "meaning": "An expression of surprise or enthusiasm"
+  },
+  {
+    "word": "youthful rebellion",
+    "partOfSpeech": "noun",
+    "meaning": "A defiance or challenge to authority often seen in young people"
+  },
+  {
+    "word": "yet-to-come",
+    "partOfSpeech": "adjective",
+    "meaning": "Not yet arrived or occurred"
+  },
+  {
+    "word": "yikes",
+    "partOfSpeech": "interjection",
+    "meaning": "An expression of alarm or surprise"
+  },
+  {
+    "word": "youthful passion",
+    "partOfSpeech": "noun",
+    "meaning": "A strong enthusiasm characteristic of youth"
+  },
+  {
+    "word": "yellowy",
+    "partOfSpeech": "adjective",
+    "meaning": "Having a yellow hue"
+  },
+  {
+    "word": "yam",
+    "partOfSpeech": "noun",
+    "meaning": "A starchy tuber often eaten as a vegetable"
+  },
+  {
+    "word": "yapping",
+    "partOfSpeech": "verb",
+    "meaning": "To talk in a noisy or annoying way"
+  },
+  {
+    "word": "yellow-tinged",
+    "partOfSpeech": "adjective",
+    "meaning": "Having a yellow tint"
+  },
+  {
+    "word": "young at heart",
+    "partOfSpeech": "adjective",
+    "meaning": "Being youthful in attitude or spirit"
+  },
+  {
+    "word": "yacht club",
+    "partOfSpeech": "noun",
+    "meaning": "A club for yacht owners"
+  },
+  {
+    "word": "yellow fever",
+    "partOfSpeech": "noun",
+    "meaning": "A viral disease transmitted by mosquitoes"
+  },
+  {
+    "word": "yard sale",
+    "partOfSpeech": "noun",
+    "meaning": "A sale of used goods from the yard of a house"
+  },
+  {
+    "word": "yoke of bondage",
+    "partOfSpeech": "noun",
+    "meaning": "A metaphorical expression referring to oppressive control"
+  }
+  ,
+  {
+    "word": "Zinc",
+    "partOfSpeech": "Noun",
+    "meaning": "A metallic element used in alloys and for galvanizing iron."
+  },
+  {
+    "word": "Zulu",
+    "partOfSpeech": "Noun/Adjective",
+    "meaning": "An ethnic group of South Africa or their language; also a phonetic alphabet letter."
+  },
+  {
+    "word": "Zodiacal",
+    "partOfSpeech": "Adjective",
+    "meaning": "Pertaining to the zodiac."
+  },
+  {
+    "word": "Zillion",
+    "partOfSpeech": "Noun",
+    "meaning": "An extremely large number; used informally to denote an indefinite large quantity."
+  },
+  {
+    "word": "Zinfandel",
+    "partOfSpeech": "Noun",
+    "meaning": "A variety of red wine grape or wine made from it."
+  },
+  {
+    "word": "Zen",
+    "partOfSpeech": "Noun",
+    "meaning": "A Japanese school of Mahayana Buddhism emphasizing the value of meditation."
+  },
+  {
+    "word": "Zeolite",
+    "partOfSpeech": "Noun",
+    "meaning": "A type of mineral used as a catalyst or in water purification."
+  },
+  {
+    "word": "Zestiness",
+    "partOfSpeech": "Noun",
+    "meaning": "The quality of being zesty; having a strong, pleasant flavor."
+  },
+  {
+    "word": "Zoomorphic",
+    "partOfSpeech": "Adjective",
+    "meaning": "Having the shape or appearance of an animal."
+  },
+  {
+    "word": "Zygotic",
+    "partOfSpeech": "Adjective",
+    "meaning": "Relating to the zygote, the cell resulting from the union of sperm and egg."
+  },
+  {
+    "word": "Zambezi",
+    "partOfSpeech": "Noun",
+    "meaning": "A river in Africa; also a name used for certain products and places."
+  },
+  {
+    "word": "Zealotry",
+    "partOfSpeech": "Noun",
+    "meaning": "Excessive or fanatical devotion to a cause."
+  },
+  {
+    "word": "Zillionaire",
+    "partOfSpeech": "Noun",
+    "meaning": "An informal term for an extremely wealthy person."
+  },
+  {
+    "word": "Zincification",
+    "partOfSpeech": "Noun",
+    "meaning": "The process of applying a protective layer of zinc to metal."
+  },
+  {
+    "word": "Zenithal",
+    "partOfSpeech": "Adjective",
+    "meaning": "Relating to the zenith or highest point."
+  },
+  {
+    "word": "Zero",
+    "partOfSpeech": "Noun/Adjective",
+    "meaning": "The numerical value of nothing; also used to describe a complete absence."
+  },
+  {
+    "word": "Zither",
+    "partOfSpeech": "Noun",
+    "meaning": "A musical instrument with strings stretched across a wooden frame."
+  },
+  {
+    "word": "Zonal",
+    "partOfSpeech": "Adjective",
+    "meaning": "Relating to a specific zone or region."
+  },
+  {
+    "word": "Zestfulness",
+    "partOfSpeech": "Noun",
+    "meaning": "The quality of being full of zest or enthusiasm."
+  },
+  {
+    "word": "Zipline",
+    "partOfSpeech": "Noun",
+    "meaning": "A cable stretched between two points, used for sliding from one to the other."
+  },
+  {
+    "word": "Zymology",
+    "partOfSpeech": "Noun",
+    "meaning": "The study of fermentation processes."
+  },
+  {
+    "word": "Zephyrous",
+    "partOfSpeech": "Adjective",
+    "meaning": "Relating to or resembling a gentle breeze."
+  },
+  {
+    "word": "Zippered",
+    "partOfSpeech": "Adjective",
+    "meaning": "Equipped with a zipper."
+  },
+  {
+    "word": "Zigzagging",
+    "partOfSpeech": "Verb",
+    "meaning": "Moving in a pattern of sharp turns or angles."
+  },
+  {
+    "word": "Zooplankton",
+    "partOfSpeech": "Noun",
+    "meaning": "Microscopic animals found in water."
+  },
+  {
+    "word": "Zincify",
+    "partOfSpeech": "Verb",
+    "meaning": "To coat or treat with zinc."
+  },
+  {
+    "word": "Zealot",
+    "partOfSpeech": "Noun",
+    "meaning": "A person who is fanatical about a cause."
+  },
+  {
+    "word": "Zenithally",
+    "partOfSpeech": "Adverb",
+    "meaning": "In a way that relates to the highest point or peak."
+  },
+  {
+    "word": "Zippering",
+    "partOfSpeech": "Verb",
+    "meaning": "The act of fastening with a zipper."
+  },
+  {
+    "word": "Zygomaticus",
+    "partOfSpeech": "Noun",
+    "meaning": "A muscle in the face used for expression."
+  },
+  {
+    "word": "Zealous",
+    "partOfSpeech": "Adjective",
+    "meaning": "Showing great enthusiasm or passion for something."
+  },
+  {
+    "word": "Zester",
+    "partOfSpeech": "Noun",
+    "meaning": "A kitchen tool used for scraping the outer skin of citrus fruits."
+  },
+  {
+    "word": "Zephyre",
+    "partOfSpeech": "Noun",
+    "meaning": "A variant spelling for zephyr, meaning a gentle breeze."
+  },
+  {
+    "word": "Zestfully",
+    "partOfSpeech": "Adverb",
+    "meaning": "With great energy or enthusiasm."
+  },
+  {
+    "word": "Zoography",
+    "partOfSpeech": "Noun",
+    "meaning": "The scientific study of animals and their habitats."
+  },
+  {
+    "word": "Zymotic",
+    "partOfSpeech": "Adjective",
+    "meaning": "Pertaining to or caused by fermentation."
+  },
+  {
+    "word": "Zygosity",
+    "partOfSpeech": "Noun",
+    "meaning": "The degree of similarity between alleles for a trait in an organism."
+  },
+  {
+    "word": "Zounds",
+    "partOfSpeech": "Interjection",
+    "meaning": "An exclamation of surprise or indignation, derived from \"God's wounds.\""
+  },
+  {
+    "word": "Zygote",
+    "partOfSpeech": "Noun",
+    "meaning": "The cell formed by the union of two gametes."
+  },
+  {
+    "word": "Zigzag",
+    "partOfSpeech": "Noun/Verb",
+    "meaning": "A pattern of sharp turns or angles; to move in such a pattern."
+  },
+  {
+    "word": "Zone",
+    "partOfSpeech": "Noun",
+    "meaning": "An area or section distinguished by specific features or purposes."
+  },
+  {
+    "word": "Zipper",
+    "partOfSpeech": "Noun",
+    "meaning": "A fastening device used on clothing or bags."
+  },
+  {
+    "word": "Zinnia",
+    "partOfSpeech": "Noun",
+    "meaning": "A type of flowering plant with bright, colorful blooms."
+  },
+  {
+    "word": "Zucchini",
+    "partOfSpeech": "Noun",
+    "meaning": "A type of summer squash with a mild flavor."
+  },
+  {
+    "word": "Zest",
+    "partOfSpeech": "Noun",
+    "meaning": "The outer, colored part of a citrus peel, or enthusiasm."
+  },
+  {
+    "word": "Zephyr",
+    "partOfSpeech": "Noun",
+    "meaning": "A gentle, mild breeze."
+  },
+  {
+    "word": "Zenith",
+    "partOfSpeech": "Noun",
+    "meaning": "The highest point or peak."
+  },
+  {
+    "word": "Zany",
+    "partOfSpeech": "Adjective",
+    "meaning": "Amusingly unconventional or odd."
+  },
+  {
+    "word": "Zeal",
+    "partOfSpeech": "Noun",
+    "meaning": "Great energy or enthusiasm in pursuit of a cause."
+  },
+  {
+    "word": "Zigzagged",
+    "partOfSpeech": "Verb",
+    "meaning": "Moved in a pattern of sharp turns or angles."
+  },
+  {
+    "word": "Zapper",
+    "partOfSpeech": "Noun",
+    "meaning": "A device used to kill insects or pests; also slang for a remote control."
+  },
+  {
+    "word": "Zestful",
+    "partOfSpeech": "Adjective",
+    "meaning": "Full of energy and enthusiasm."
+  },
+  {
+    "word": "Ziggurat",
+    "partOfSpeech": "Noun",
+    "meaning": "A rectangular stepped tower, often found in ancient Mesopotamian architecture."
+  },
+  {
+    "word": "Zoning",
+    "partOfSpeech": "Noun",
+    "meaning": "The process of designating land for specific uses."
+  },
+  {
+    "word": "Zip",
+    "partOfSpeech": "Verb",
+    "meaning": "To fasten with a zipper or to move quickly."
+  },
+  {
+    "word": "Zesty",
+    "partOfSpeech": "Adjective",
+    "meaning": "Having a strong, pleasant flavor or quality."
+  },
+  {
+    "word": "Zygomatic",
+    "partOfSpeech": "Adjective",
+    "meaning": "Pertaining to the cheekbone."
+  },
+  {
+    "word": "Zilch",
+    "partOfSpeech": "noun",
+    "meaning": "nothing; zero"
+  },
+  {
+    "word": "Zephyrs",
+    "partOfSpeech": "noun plural",
+    "meaning": "soft gentle breezes"
+  },
+  {
+    "word": "Zestily",
+    "partOfSpeech": "adverb",
+    "meaning": "in a lively and energetic manner"
+  },
+  {
+    "word": "Zucchettos",
+    "partOfSpeech": "noun plural",
+    "meaning": "small skullcap-like hats worn by certain clergy"
+  },
+  {
+    "word": "Zapped",
+    "partOfSpeech": "verb",
+    "meaning": "to strike or hit with sudden force"
+  },
+  {
+    "word": "Zebraic",
+    "partOfSpeech": "adjective",
+    "meaning": "relating to or resembling a zebra or zebras"
+  },
+  {
+    "word": "Zoophyte",
+    "partOfSpeech": "noun",
+    "meaning": "any animal-like non-moving organism such as coral or sponge"
+  },
+  {
+    "word": "Zucchetto",
+    "partOfSpeech": "noun",
+    "meaning": "a small skullcap-like hat worn by certain clergy"
+  },
+  {
+    "word": "Zippy",
+    "partOfSpeech": "adjective",
+    "meaning": "lively, energetic, and fast-moving"
+  },
+  {
+    "word": "Zestier",
+    "partOfSpeech": "adjective",
+    "meaning": "more lively and full of energy"
+  },
+  {
+    "word": "Zoologist",
+    "partOfSpeech": "noun",
+    "meaning": "a scientist who studies animals and their behavior"
+  },
+  {
+    "word": "Zoroastrian",
+    "partOfSpeech": "noun",
+    "meaning": "a follower of the ancient Persian religion founded by Zoroaster"
+  },
+  {
+    "word": "Zapateado",
+    "partOfSpeech": "noun",
+    "meaning": "a type of Spanish dance characterized by lively footwork"
+  },
+  {
+    "word": "Zero-sum",
+    "partOfSpeech": "adjective",
+    "meaning": "relating to a situation where one person's gain is exactly balanced by another person's loss"
+  },
+  {
+    "word": "Zoonosis",
+    "partOfSpeech": "noun",
+    "meaning": "a disease that can be transmitted from animals to humans"
+  },
+  {
+    "word": "Zombielike",
+    "partOfSpeech": "adjective",
+    "meaning": "resembling or characteristic of a zombie; having a vacant or detached expression"
+  },
+  {
+    "word": "Zealousness",
+    "partOfSpeech": "Noun",
+    "meaning": "The quality of being zealous; fervent dedication."
+  },
+  {
+    "word": "Ziplocked",
+    "partOfSpeech": "Adjective",
+    "meaning": "Closed or sealed with a zip-lock mechanism."
+  },
+  {
+    "word": "Ziggurats",
+    "partOfSpeech": "Noun",
+    "meaning": "Plural of ziggurat; ancient Mesopotamian temple towers."
+  },
+  {
+    "word": "Zanyish",
+    "partOfSpeech": "Adjective",
+    "meaning": "Slightly zany or eccentric."
+  },
+  {
+    "word": "Zymurgies",
+    "partOfSpeech": "Noun",
+    "meaning": "Various studies or applications of zymurgy."
+  },
+  {
+    "word": "Zymurgist",
+    "partOfSpeech": "Noun",
+    "meaning": "An expert in fermentation processes."
+  },
+  {
+    "word": "Zincified",
+    "partOfSpeech": "Adjective",
+    "meaning": "Coated or treated with zinc to prevent rust or corrosion."
+  },
+  {
+    "word": "Zombify",
+    "partOfSpeech": "Verb",
+    "meaning": "To turn into or make resemble a zombie; to make something appear lifeless or inactive."
+  },
+  {
+    "word": "Zincography",
+    "partOfSpeech": "Noun",
+    "meaning": "The process of printing from a zinc plate."
+  },
+  {
+    "word": "Zeniths",
+    "partOfSpeech": "Noun",
+    "meaning": "Plural of zenith; the highest points or peaks of something."
+  },
+  {
+    "word": "Zootomy",
+    "partOfSpeech": "Noun",
+    "meaning": "The study of animal anatomy."
+  },
+  {
+    "word": "Zincate",
+    "partOfSpeech": "Verb",
+    "meaning": "To treat or coat with zinc."
   }
 ];
