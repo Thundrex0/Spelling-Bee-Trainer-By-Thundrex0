@@ -42,6 +42,7 @@ function generateLetterButtons() {
     const letter = String.fromCharCode(i);
     const btn = document.createElement("button");
     btn.textContent = letter;
+    btn.classList.add("letter-btn");
     btn.addEventListener("click", () => selectLetter(letter));
     letterGrid.appendChild(btn);
   }
@@ -72,6 +73,7 @@ function loadCurrentWord() {
 }
 
 function loadNextWord() {
+  if (!filteredWords.length) return;
   feedback.textContent = "";
   input.value = "";
   currentIndex = (currentIndex + 1) % filteredWords.length;
@@ -80,6 +82,7 @@ function loadNextWord() {
 
 // === Word Check
 function checkAnswer() {
+  if (!currentWord) return;
   const userInput = input.value.trim().toLowerCase();
   const correct = currentWord.word.toLowerCase();
 
@@ -90,8 +93,8 @@ function checkAnswer() {
   }
 
   const isCorrect = userInput === correct;
-
   totalAttempts++;
+
   if (isCorrect) {
     correctCount++;
     streak++;
@@ -105,7 +108,6 @@ function checkAnswer() {
     saveMistake(currentWord.word);
   }
 
-  // Save stats
   localStorage.setItem("streak", streak);
   const accuracy = Math.round((correctCount / totalAttempts) * 100);
   localStorage.setItem("accuracy", accuracy + "%");
@@ -117,11 +119,15 @@ function retryWord() {
 }
 
 function showAnswer() {
+  if (!currentWord) return;
   feedback.textContent = `The correct spelling is: ${currentWord.word}`;
   feedback.style.color = "#f59e0b";
 }
 
 function playWord() {
+  if (!currentWord || !currentWord.word) return;
+  if (speechSynthesis.speaking) return;
+
   const utter = new SpeechSynthesisUtterance(currentWord.word);
   utter.lang = "en-US";
   speechSynthesis.speak(utter);
@@ -131,7 +137,6 @@ function playWord() {
 function saveScore() {
   const users = JSON.parse(localStorage.getItem("users")) || {};
   if (!users[username]) return;
-
   users[username].scores.section += 1;
   localStorage.setItem("users", JSON.stringify(users));
 }
@@ -161,44 +166,28 @@ window.addEventListener("beforeunload", () => {
   localStorage.setItem("timePlayed", updatedTime + "m");
 });
 
-// === Keyboard Shortcuts & Audio Integration (Number-Based Version) ===
-// Works instantly even when input is focused
+// === Keyboard Shortcuts (Number-Based + Arrow Right)
+document.addEventListener("keydown", (event) => {
+  // Skip typing letters into the input
+  if (event.target === input && !["Enter", "ArrowRight", "2", "3", "4"].includes(event.key)) return;
 
-/*
-   ✅ Shortcut keys:
-   Enter → Check Answer
-   RightArrow → Next Word
-   2 → Retry Word
-   3 → Show Answer
-   4 → Play Sound
-*/
-
-// === Main Shortcut Handler ===
-document.addEventListener("keydown", function (event) {
-  // ✅ Enter key (works anywhere, even inside input)
-  if (event.key === "Enter") {
-    checkAnswer();
-    event.preventDefault();
-    return;
-  }
-
-  // ✅ Number shortcuts
   switch (event.key) {
+    case "Enter":
+      checkAnswer();
+      event.preventDefault();
+      break;
     case "ArrowRight":
       highlightButton("next-btn");
       loadNextWord();
       break;
-
     case "2":
       highlightButton("retry-btn");
       retryWord();
       break;
-
     case "3":
       highlightButton("show-answer-btn");
       showAnswer();
       break;
-
     case "4":
       highlightButton("play-sound");
       playWord();
@@ -206,7 +195,7 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-// === Visual Feedback ===
+// === Visual Feedback
 function highlightButton(buttonId) {
   const btn = document.getElementById(buttonId);
   if (!btn) return;
@@ -214,18 +203,7 @@ function highlightButton(buttonId) {
   setTimeout(() => btn.classList.remove("active-key"), 200);
 }
 
-// === Play Word Function ===
-function playWord() {
-  if (!currentWord || !currentWord.word) return;
-  if (speechSynthesis.speaking) return;
-
-  const utter = new SpeechSynthesisUtterance(currentWord.word);
-  utter.lang = "en-US";
-  speechSynthesis.speak(utter);
-}
-
-// === Minimal CSS (add this to your stylesheet) ===
-/*
+/* === CSS to Add ===
 .active-key {
   transform: scale(0.95);
   background-color: #4ade80;
