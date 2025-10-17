@@ -9,8 +9,9 @@ let streak = parseInt(localStorage.getItem("streak")) || 0;
 let totalTime = parseInt(localStorage.getItem("timePlayed")) || 0;
 const startTime = Date.now();
 
-// ✅ Initialize WordList with fallback
-let WordList = window.WordList || [];
+// ✅ REMOVE THIS LINE - WordList should already be available as const
+// let WordList = window.WordList || [];
+
 let filteredWords = [];
 let currentWord = null;
 let currentIndex = 0;
@@ -54,25 +55,33 @@ function generateLetterButtons() {
 // === Letter selection and word filtering - DEBUG VERSION
 function selectLetter(letter) {
   console.log("Letter clicked:", letter);
-  console.log("WordList available:", Array.isArray(WordList));
+  console.log("WordList available:", typeof WordList);
   console.log("WordList length:", WordList ? WordList.length : 0);
   
-  // Try multiple fallback options
-  if (!Array.isArray(WordList) || WordList.length === 0) {
-    console.log("WordList not found, trying fallbacks...");
-    WordList = window.WordList || [];
-    
-    // If still not found, try to get from global scope
-    if (!Array.isArray(WordList) || WordList.length === 0) {
-      console.error("WordList is missing or not loaded!");
-      heading.textContent = "Word list not loaded! Please refresh.";
-      resetInfo();
-      return;
-    }
+  // Check if WordList exists and is an array
+  if (typeof WordList === 'undefined') {
+    console.error("WordList is undefined!");
+    heading.textContent = "Word list not loaded! Please refresh.";
+    resetInfo();
+    return;
+  }
+  
+  if (!Array.isArray(WordList)) {
+    console.error("WordList is not an array:", typeof WordList);
+    heading.textContent = "Word list format error!";
+    resetInfo();
+    return;
+  }
+
+  if (WordList.length === 0) {
+    console.error("WordList is empty!");
+    heading.textContent = "Word list is empty!";
+    resetInfo();
+    return;
   }
 
   filteredWords = WordList.filter(word =>
-    word.word && word.word.toLowerCase().startsWith(letter.toLowerCase())
+    word && word.word && word.word.toLowerCase().startsWith(letter.toLowerCase())
   );
 
   console.log("Filtered words found:", filteredWords.length);
