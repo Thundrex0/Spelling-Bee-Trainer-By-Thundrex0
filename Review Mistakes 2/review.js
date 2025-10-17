@@ -181,7 +181,7 @@ document.addEventListener("keydown", function (event) {
 
   // ✅ Number shortcuts
   switch (event.key) {
-    case "1":
+    case "ArrowRight":
       highlightButton("next-btn");
       loadNextWord();
       break;
