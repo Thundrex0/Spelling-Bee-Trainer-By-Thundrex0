@@ -161,56 +161,52 @@ window.addEventListener("beforeunload", () => {
   localStorage.setItem("timePlayed", updatedTime + "m");
 });
 
-// === Keyboard Shortcuts & Audio Integration ===
-// Add this script AFTER your DOM elements are defined (e.g., near the bottom of your JS file)
+// === Keyboard Shortcuts & Audio Integration (Number-Based Version) ===
+// Works instantly even when input is focused
 
 /*
-   ✅ Supported keys:
-   Enter → Check answer (when typing)
-   N → Next word
-   R → Retry current word
-   S → Show correct spelling
-   P → Play pronunciation audio
+   ✅ Shortcut keys:
+   Enter → Check Answer
+   1 → Next Word
+   2 → Retry Word
+   3 → Show Answer
+   4 → Play Sound
 */
 
 // === Main Shortcut Handler ===
 document.addEventListener("keydown", function (event) {
-  const active = document.activeElement;
-
-  // ✅ When typing inside the input box (only Enter works)
-  if (active === input) {
-    if (event.key === "Enter") {
-      checkAnswer();
-      event.preventDefault(); // Avoid unwanted submits or reloads
-    }
-    return; // Stop further key actions
+  // ✅ Enter key (works anywhere, even inside input)
+  if (event.key === "Enter") {
+    checkAnswer();
+    event.preventDefault();
+    return;
   }
 
-  // ✅ When NOT typing (global shortcuts)
-  switch (event.key.toLowerCase()) {
-    case "n":
+  // ✅ Number shortcuts
+  switch (event.key) {
+    case "1":
       highlightButton("next-btn");
       loadNextWord();
       break;
 
-    case "r":
+    case "2":
       highlightButton("retry-btn");
       retryWord();
       break;
 
-    case "s":
+    case "3":
       highlightButton("show-answer-btn");
       showAnswer();
       break;
 
-    case "p":
+    case "4":
       highlightButton("play-sound");
       playWord();
       break;
   }
 });
 
-// === Visual Feedback for Pressed Buttons ===
+// === Visual Feedback ===
 function highlightButton(buttonId) {
   const btn = document.getElementById(buttonId);
   if (!btn) return;
@@ -218,11 +214,9 @@ function highlightButton(buttonId) {
   setTimeout(() => btn.classList.remove("active-key"), 200);
 }
 
-// === Play Word Function (Universal) ===
+// === Play Word Function ===
 function playWord() {
   if (!currentWord || !currentWord.word) return;
-
-  // Prevent spamming speech synthesis
   if (speechSynthesis.speaking) return;
 
   const utter = new SpeechSynthesisUtterance(currentWord.word);
@@ -230,11 +224,11 @@ function playWord() {
   speechSynthesis.speak(utter);
 }
 
-// === Minimal CSS (Add this to your CSS file) ===
+// === Minimal CSS (add this to your stylesheet) ===
 /*
 .active-key {
   transform: scale(0.95);
-  background-color: #4ade80;   // Light green feedback
+  background-color: #4ade80;
   box-shadow: 0 0 10px #4ade80aa;
   transition: all 0.2s ease;
 }

@@ -157,3 +157,76 @@ window.addEventListener("beforeunload", () => {
   const updatedTime = totalTime + sessionMinutes;
   localStorage.setItem("timePlayed", updatedTime + "m");
 });
+
+// === Keyboard Shortcuts & Audio Integration (Number-Based Version) ===
+// Works instantly even when input is focused
+
+/*
+   ✅ Shortcut keys:
+   Enter → Check Answer
+   1 → Next Word
+   2 → Retry Word
+   3 → Show Answer
+   4 → Play Sound
+*/
+
+// === Main Shortcut Handler ===
+document.addEventListener("keydown", function (event) {
+  // ✅ Enter key (works anywhere, even inside input)
+  if (event.key === "Enter") {
+    checkAnswer();
+    event.preventDefault();
+    return;
+  }
+
+  // ✅ Number shortcuts
+  switch (event.key) {
+    case "1":
+      highlightButton("next-btn");
+      loadNextWord();
+      break;
+
+    case "2":
+      highlightButton("retry-btn");
+      retryWord();
+      break;
+
+    case "3":
+      highlightButton("show-answer-btn");
+      showAnswer();
+      break;
+
+    case "4":
+      highlightButton("play-sound");
+      playWord();
+      break;
+  }
+});
+
+// === Visual Feedback ===
+function highlightButton(buttonId) {
+  const btn = document.getElementById(buttonId);
+  if (!btn) return;
+  btn.classList.add("active-key");
+  setTimeout(() => btn.classList.remove("active-key"), 200);
+}
+
+// === Play Word Function ===
+function playWord() {
+  if (!currentWord || !currentWord.word) return;
+  if (speechSynthesis.speaking) return;
+
+  const utter = new SpeechSynthesisUtterance(currentWord.word);
+  utter.lang = "en-US";
+  speechSynthesis.speak(utter);
+}
+
+// === Minimal CSS (add this to your stylesheet) ===
+/*
+.active-key {
+  transform: scale(0.95);
+  background-color: #4ade80;
+  box-shadow: 0 0 10px #4ade80aa;
+  transition: all 0.2s ease;
+}
+*/
