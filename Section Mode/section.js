@@ -51,12 +51,12 @@ function generateLetterButtons() {
 
 // === Letter selection and word filtering
 function selectLetter(letter) {
-  if (!Array.isArray(wordList)) {
+  if (!Array.isArray(WordList)) {
     console.error("wordList is missing or not loaded!");
     return;
   }
 
-  filteredWords = wordList.filter(word =>
+  filteredWords = WordList.filter(word =>
     word.word.toLowerCase().startsWith(letter.toLowerCase())
   );
 

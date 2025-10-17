@@ -1,4 +1,4 @@
-const wordList = [
+const WordList = [
 ,
   {
     "word": "Abandon",
