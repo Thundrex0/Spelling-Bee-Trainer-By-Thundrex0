@@ -160,3 +160,82 @@ window.addEventListener("beforeunload", () => {
   const updatedTime = totalTime + sessionMinutes;
   localStorage.setItem("timePlayed", updatedTime + "m");
 });
+
+// === Keyboard Shortcuts & Audio Integration ===
+// Add this script AFTER your DOM elements are defined (e.g., near the bottom of your JS file)
+
+/*
+   ✅ Supported keys:
+   Enter → Check answer (when typing)
+   N → Next word
+   R → Retry current word
+   S → Show correct spelling
+   P → Play pronunciation audio
+*/
+
+// === Main Shortcut Handler ===
+document.addEventListener("keydown", function (event) {
+  const active = document.activeElement;
+
+  // ✅ When typing inside the input box (only Enter works)
+  if (active === input) {
+    if (event.key === "Enter") {
+      checkAnswer();
+      event.preventDefault(); // Avoid unwanted submits or reloads
+    }
+    return; // Stop further key actions
+  }
+
+  // ✅ When NOT typing (global shortcuts)
+  switch (event.key.toLowerCase()) {
+    case "n":
+      highlightButton("next-btn");
+      loadNextWord();
+      break;
+
+    case "r":
+      highlightButton("retry-btn");
+      retryWord();
+      break;
+
+    case "s":
+      highlightButton("show-answer-btn");
+      showAnswer();
+      break;
+
+    case "p":
+      highlightButton("play-sound");
+      playWord();
+      break;
+  }
+});
+
+// === Visual Feedback for Pressed Buttons ===
+function highlightButton(buttonId) {
+  const btn = document.getElementById(buttonId);
+  if (!btn) return;
+  btn.classList.add("active-key");
+  setTimeout(() => btn.classList.remove("active-key"), 200);
+}
+
+// === Play Word Function (Universal) ===
+function playWord() {
+  if (!currentWord || !currentWord.word) return;
+
+  // Prevent spamming speech synthesis
+  if (speechSynthesis.speaking) return;
+
+  const utter = new SpeechSynthesisUtterance(currentWord.word);
+  utter.lang = "en-US";
+  speechSynthesis.speak(utter);
+}
+
+// === Minimal CSS (Add this to your CSS file) ===
+/*
+.active-key {
+  transform: scale(0.95);
+  background-color: #4ade80;   // Light green feedback
+  box-shadow: 0 0 10px #4ade80aa;
+  transition: all 0.2s ease;
+}
+*/
