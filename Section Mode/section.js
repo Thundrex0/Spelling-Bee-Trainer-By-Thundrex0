@@ -167,7 +167,7 @@ window.addEventListener("beforeunload", () => {
 /*
    ✅ Shortcut keys:
    Enter → Check Answer
-   1 → Next Word
+   RightArrow → Next Word
    2 → Retry Word
    3 → Show Answer
    4 → Play Sound
@@ -184,7 +184,7 @@ document.addEventListener("keydown", function (event) {
 
   // ✅ Number shortcuts
   switch (event.key) {
-    case "1":
+    case "ArrowRight":
       highlightButton("next-btn");
       loadNextWord();
       break;
