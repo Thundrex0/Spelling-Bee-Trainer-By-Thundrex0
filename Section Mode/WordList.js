@@ -1,5 +1,4 @@
 const WordList = [
-,
   {
     "word": "Abandon",
     "partOfSpeech": "Verb",
