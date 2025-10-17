@@ -38,17 +38,25 @@ document.getElementById("play-sound").addEventListener("click", playWord);
 
 // === Letter Buttons
 function generateLetterButtons() {
+  letterGrid.innerHTML = ""; // clear previous
   for (let i = 65; i <= 90; i++) {
     const letter = String.fromCharCode(i);
     const btn = document.createElement("button");
     btn.textContent = letter;
+    btn.classList.add("letter-btn");
     btn.addEventListener("click", () => selectLetter(letter));
     letterGrid.appendChild(btn);
   }
 }
 
 function selectLetter(letter) {
-  filteredWords = WordList2.filter(word =>
+  // safety: make sure wordList exists
+  if (!Array.isArray(wordList)) {
+    console.error("wordList is missing or not loaded!");
+    return;
+  }
+
+  filteredWords = wordList.filter(word =>
     word.word.toLowerCase().startsWith(letter.toLowerCase())
   );
 
@@ -64,22 +72,25 @@ function selectLetter(letter) {
 
 function loadCurrentWord() {
   currentWord = filteredWords[currentIndex];
+  if (!currentWord) return;
   heading.textContent = "Spell the word!";
   input.value = "";
   feedback.textContent = "";
-  meaningBox.textContent = currentWord.meaning;
-  posBox.textContent = currentWord.partOfSpeech;
+  meaningBox.textContent = currentWord.meaning || "---";
+  posBox.textContent = currentWord.partOfSpeech || "---";
 }
 
 function loadNextWord() {
-  feedback.textContent = "";
-  input.value = "";
+  if (!filteredWords.length) return;
   currentIndex = (currentIndex + 1) % filteredWords.length;
   loadCurrentWord();
+  feedback.textContent = "";
+  input.value = "";
 }
 
 // === Word Check
 function checkAnswer() {
+  if (!currentWord) return;
   const userInput = input.value.trim().toLowerCase();
   const correct = currentWord.word.toLowerCase();
 
@@ -89,9 +100,9 @@ function checkAnswer() {
     return;
   }
 
+  totalAttempts++;
   const isCorrect = userInput === correct;
 
-  totalAttempts++;
   if (isCorrect) {
     correctCount++;
     streak++;
@@ -100,12 +111,11 @@ function checkAnswer() {
     saveScore();
   } else {
     streak = 0;
-    feedback.textContent = "❌ Incorrect!";
+    feedback.textContent = `❌ Incorrect! The correct spelling was ${currentWord.word}`;
     feedback.style.color = "#ef4444";
     saveMistake(currentWord.word);
   }
 
-  // Save stats
   localStorage.setItem("streak", streak);
   const accuracy = Math.round((correctCount / totalAttempts) * 100);
   localStorage.setItem("accuracy", accuracy + "%");
@@ -117,21 +127,23 @@ function retryWord() {
 }
 
 function showAnswer() {
-  feedback.textContent = `The correct spelling is: ${currentWord.word}`;
+  if (!currentWord) return;
+  feedback.textContent = `Answer: ${currentWord.word}`;
   feedback.style.color = "#f59e0b";
 }
 
 function playWord() {
+  if (!currentWord || !currentWord.word) return;
+  if (speechSynthesis.speaking) return;
   const utter = new SpeechSynthesisUtterance(currentWord.word);
   utter.lang = "en-US";
   speechSynthesis.speak(utter);
 }
 
-// === Save User Score
+// === Save Data
 function saveScore() {
   const users = JSON.parse(localStorage.getItem("users")) || {};
   if (!users[username]) return;
-
   users[username].scores.section += 1;
   localStorage.setItem("users", JSON.stringify(users));
 }
@@ -160,44 +172,31 @@ window.addEventListener("beforeunload", () => {
   const updatedTime = totalTime + sessionMinutes;
   localStorage.setItem("timePlayed", updatedTime + "m");
 });
-// === Keyboard Shortcuts & Audio Integration (Number-Based Version) ===
-// Works instantly even when input is focused
 
-/*
-   ✅ Shortcut keys:
-   Enter → Check Answer
-   1 → Next Word
-   2 → Retry Word
-   3 → Show Answer
-   4 → Play Sound
-*/
-
-// === Main Shortcut Handler ===
-document.addEventListener("keydown", function (event) {
-  // ✅ Enter key (works anywhere, even inside input)
-  if (event.key === "Enter") {
-    checkAnswer();
-    event.preventDefault();
-    return;
+// === Keyboard Shortcuts
+document.addEventListener("keydown", (event) => {
+  // Allow typing letters in input box normally
+  if (event.target === input && !["Enter", "ArrowRight", "2", "3", "4"].includes(event.key)) {
+    return; // do not interfere with typing
   }
 
-  // ✅ Number shortcuts
   switch (event.key) {
-    case "ArrowRight":
+    case "Enter":
+      checkAnswer();
+      event.preventDefault();
+      break;
+    case "1":
       highlightButton("next-btn");
       loadNextWord();
       break;
-
     case "2":
       highlightButton("retry-btn");
       retryWord();
       break;
-
     case "3":
       highlightButton("show-answer-btn");
       showAnswer();
       break;
-
     case "4":
       highlightButton("play-sound");
       playWord();
@@ -205,26 +204,15 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-// === Visual Feedback ===
-function highlightButton(buttonId) {
-  const btn = document.getElementById(buttonId);
+// === Highlight Feedback
+function highlightButton(id) {
+  const btn = document.getElementById(id);
   if (!btn) return;
   btn.classList.add("active-key");
   setTimeout(() => btn.classList.remove("active-key"), 200);
 }
 
-// === Play Word Function ===
-function playWord() {
-  if (!currentWord || !currentWord.word) return;
-  if (speechSynthesis.speaking) return;
-
-  const utter = new SpeechSynthesisUtterance(currentWord.word);
-  utter.lang = "en-US";
-  speechSynthesis.speak(utter);
-}
-
-// === Minimal CSS (add this to your stylesheet) ===
-/*
+/* === CSS Example ===
 .active-key {
   transform: scale(0.95);
   background-color: #4ade80;
